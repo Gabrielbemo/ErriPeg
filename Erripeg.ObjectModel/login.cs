@@ -20,13 +20,14 @@ namespace Erripeg.ObjectModel
 
         private void ButtonLogin_Click(object sender, EventArgs e)
         {
-
+            ConnectionsQuerys con = new ConnectionsQuerys();
+            con.CheckLogin(textBoxLogin.Text, textBoxSenha.Text);
         }
 
         private void ButtonCadastro_Click(object sender, EventArgs e)
         {
-            Class1 con = new Class1();
-            con.register(textBoxLogin.Text, textBoxSenha.Text);
+            ConnectionsQuerys con = new ConnectionsQuerys();
+            con.Register(textBoxLogin.Text, textBoxSenha.Text);
         }
     }
 }

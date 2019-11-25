@@ -20,7 +20,7 @@ namespace Erripeg.Forms
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            Class1 ssas = new Class1();
+            ConnectionsQuerys ssas = new ConnectionsQuerys();
             ssas.register("teste","123");
         }
     }

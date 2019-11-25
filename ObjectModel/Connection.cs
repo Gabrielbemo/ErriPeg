@@ -9,7 +9,7 @@ namespace ObjectModel
 {
     public class Connection
     {
-        SqlConnection con = new SqlConnection();
+        readonly SqlConnection con = new SqlConnection();
 
         public Connection()
         {
