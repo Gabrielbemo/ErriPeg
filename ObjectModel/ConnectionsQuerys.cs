@@ -51,9 +51,8 @@ namespace ObjectModel
             string sql;
             SqlDataReader reader;
 
-            sql = "Select * from Player where login = " + login + 
-                "and senha = " + senha ;
-
+            sql = "Select * from Player where login = \'" + login + "\' " + 
+                " and password = \'" + senha + "\' ";
             try
             {
                 cmd.Connection = connection.Connect();
@@ -61,8 +60,9 @@ namespace ObjectModel
                 reader = cmd.ExecuteReader();
                 if (reader.HasRows)
                 {
-                    reader.Read();
-                    Usuario.id = int.Parse(reader.GetString(0));
+                    //reader.Read();
+                    var pawg = reader.GetString(0);
+                    Usuario.id = int.Parse(pawg);
                     Usuario.login = reader.GetString(1);
                     Usuario.senha = reader.GetString(2);
                     reader.Close();
