@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ObjectModel
 {
@@ -15,7 +16,7 @@ namespace ObjectModel
 
         public void Register(String login, String senha)
         {   
-            cmd.CommandText = "INSERT INTO Player (login,password)values(@login,@senha)";
+            cmd.CommandText = "INSERT INTO Player (login,password) values (@login,@senha);";
             
             cmd.Parameters.AddWithValue("@login", login);
             cmd.Parameters.AddWithValue("@senha", senha);
@@ -33,56 +34,45 @@ namespace ObjectModel
             
 
         }
-        public Boolean CheckLogin(string login, string senha)
+        public Boolean CheckLogin(string login, string password)
         {
-            /* DataSet result = new DataSet();
-             SqlDataAdapter adapter = new SqlDataAdapter
-             {
-                 SelectCommand = new SqlCommand(
-                 'select * from Player where login = ' + login +
-                 'and ' +
-                 'password = ' + senha,
-                 connection.Connect())
-             };
-             adapter.Fill(result);
+            bool usuarioExistente = false;
+            try
+            {
+                connection.Connect();
+                SqlCommand cmd = new SqlCommand("select * from player where login like '"+login.Trim()+"' and password like '"+password.Trim()+"';");
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    usuarioExistente = true;
+                }
+                connection.Disconnect();
+            }
+            catch (Exception ex)
+            {
+            }
+            return usuarioExistente;
 
-             result.Tables().;
-             */
-            string sql;
-            SqlDataReader reader;
+        }
 
-            sql = "Select * from Player where login = \'" + login + "\' " + 
-                " and password = \'" + senha + "\' ";
+        public void CreateSession(String history, String nome, String senha)
+        {
+            cmd.CommandText = "INSERT INTO Section (history,nome,password) values (@history,@nome,@senha);";
+
+            cmd.Parameters.AddWithValue("@history", history);
+            cmd.Parameters.AddWithValue("@nome", nome);
+            cmd.Parameters.AddWithValue("@senha", senha);
+
             try
             {
                 cmd.Connection = connection.Connect();
-                cmd = new SqlCommand(sql, cmd.Connection);
-                reader = cmd.ExecuteReader();
-                if (reader.HasRows)
-                {
-                    //reader.Read();
-                    var pawg = reader.GetString(0);
-                    Usuario.id = int.Parse(pawg);
-                    Usuario.login = reader.GetString(1);
-                    Usuario.senha = reader.GetString(2);
-                    reader.Close();
-                    cmd.Dispose();
-                    connection.Disconnect();
-                    return true;
-                    
-                }
-                else
-                {
-                    reader.Close();
-                    cmd.Dispose();
-                    connection.Disconnect();
-                    return false;
-                }
+                cmd.ExecuteNonQuery();
+                connection.Disconnect();
                 
             }
-            catch (Exception)
+            catch (SqlException ex)
             {
-                return false;
+                MessageBox.Show("Não foi possível criar a sessão");
             }
         }
     }

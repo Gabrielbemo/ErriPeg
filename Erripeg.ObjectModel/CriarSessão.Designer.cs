@@ -28,28 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.SessionPasswordTextBox = new System.Windows.Forms.TextBox();
+            this.createSessionButton = new System.Windows.Forms.Button();
+            this.sessionPasswordTextBox = new System.Windows.Forms.TextBox();
             this.sessionPasswordLabel = new System.Windows.Forms.Label();
             this.sessionNameTextBox = new System.Windows.Forms.TextBox();
             this.createSessionLabel = new System.Windows.Forms.Label();
+            this.sessionStoryRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.sessionStoryLabel = new System.Windows.Forms.Label();
+            this.selectSessionButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // createSessionButton
             // 
-            this.button1.Location = new System.Drawing.Point(75, 306);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Create Session";
-            this.button1.UseVisualStyleBackColor = true;
+            this.createSessionButton.Location = new System.Drawing.Point(75, 306);
+            this.createSessionButton.Name = "createSessionButton";
+            this.createSessionButton.Size = new System.Drawing.Size(100, 23);
+            this.createSessionButton.TabIndex = 9;
+            this.createSessionButton.Text = "Create Session";
+            this.createSessionButton.UseVisualStyleBackColor = true;
+            this.createSessionButton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // SessionPasswordTextBox
+            // sessionPasswordTextBox
             // 
-            this.SessionPasswordTextBox.Location = new System.Drawing.Point(75, 189);
-            this.SessionPasswordTextBox.Name = "SessionPasswordTextBox";
-            this.SessionPasswordTextBox.Size = new System.Drawing.Size(100, 20);
-            this.SessionPasswordTextBox.TabIndex = 8;
+            this.sessionPasswordTextBox.Location = new System.Drawing.Point(75, 189);
+            this.sessionPasswordTextBox.Name = "sessionPasswordTextBox";
+            this.sessionPasswordTextBox.Size = new System.Drawing.Size(100, 20);
+            this.sessionPasswordTextBox.TabIndex = 8;
             // 
             // sessionPasswordLabel
             // 
@@ -76,18 +80,49 @@
             this.createSessionLabel.TabIndex = 5;
             this.createSessionLabel.Text = "Session name:";
             // 
+            // sessionStoryRichTextBox
+            // 
+            this.sessionStoryRichTextBox.Location = new System.Drawing.Point(199, 86);
+            this.sessionStoryRichTextBox.Name = "sessionStoryRichTextBox";
+            this.sessionStoryRichTextBox.Size = new System.Drawing.Size(206, 243);
+            this.sessionStoryRichTextBox.TabIndex = 10;
+            this.sessionStoryRichTextBox.Text = "";
+            // 
+            // sessionStoryLabel
+            // 
+            this.sessionStoryLabel.AutoSize = true;
+            this.sessionStoryLabel.Location = new System.Drawing.Point(196, 70);
+            this.sessionStoryLabel.Name = "sessionStoryLabel";
+            this.sessionStoryLabel.Size = new System.Drawing.Size(74, 13);
+            this.sessionStoryLabel.TabIndex = 11;
+            this.sessionStoryLabel.Text = "Session Story:";
+            // 
+            // selectSessionButton
+            // 
+            this.selectSessionButton.Location = new System.Drawing.Point(75, 277);
+            this.selectSessionButton.Name = "selectSessionButton";
+            this.selectSessionButton.Size = new System.Drawing.Size(100, 23);
+            this.selectSessionButton.TabIndex = 12;
+            this.selectSessionButton.Text = "Select Session";
+            this.selectSessionButton.UseVisualStyleBackColor = true;
+            this.selectSessionButton.Click += new System.EventHandler(this.selectSessionButton_Click);
+            // 
             // CriarSessão
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(245, 412);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.SessionPasswordTextBox);
+            this.ClientSize = new System.Drawing.Size(476, 412);
+            this.Controls.Add(this.selectSessionButton);
+            this.Controls.Add(this.sessionStoryLabel);
+            this.Controls.Add(this.sessionStoryRichTextBox);
+            this.Controls.Add(this.createSessionButton);
+            this.Controls.Add(this.sessionPasswordTextBox);
             this.Controls.Add(this.sessionPasswordLabel);
             this.Controls.Add(this.sessionNameTextBox);
             this.Controls.Add(this.createSessionLabel);
             this.Name = "CriarSessão";
             this.Text = "CriarSessão";
+            this.Load += new System.EventHandler(this.CriarSessão_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -95,10 +130,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox SessionPasswordTextBox;
+        private System.Windows.Forms.Button createSessionButton;
+        private System.Windows.Forms.TextBox sessionPasswordTextBox;
         private System.Windows.Forms.Label sessionPasswordLabel;
         private System.Windows.Forms.TextBox sessionNameTextBox;
         private System.Windows.Forms.Label createSessionLabel;
+        private System.Windows.Forms.RichTextBox sessionStoryRichTextBox;
+        private System.Windows.Forms.Label sessionStoryLabel;
+        private System.Windows.Forms.Button selectSessionButton;
     }
 }
