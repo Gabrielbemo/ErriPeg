@@ -90,7 +90,7 @@
             this.textBoxSenha.Size = new System.Drawing.Size(135, 20);
             this.textBoxSenha.TabIndex = 5;
             // 
-            // login
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -101,8 +101,9 @@
             this.Controls.Add(this.buttonCadastro);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "login";
+            this.Name = "Login";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
