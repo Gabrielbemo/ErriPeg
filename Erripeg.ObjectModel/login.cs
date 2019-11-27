@@ -21,7 +21,7 @@ namespace Erripeg.ObjectModel
 
         private void ButtonLogin_Click(object sender, EventArgs e)
         {
-            /*ConnectionsQuerys con = new ConnectionsQuerys();
+            ConnectionsQuerys con = new ConnectionsQuerys();
             if(con.CheckLogin(textBoxLogin.Text.Trim(), textBoxSenha.Text.Trim())== true)
             {
                 MessageBox.Show("Sucesso");
@@ -29,11 +29,13 @@ namespace Erripeg.ObjectModel
             else
             {
                 MessageBox.Show("Login ou senha invalidos");            
-            }*/
+            }
+            /*
             Login l = new Login();
             CriarSessão c = new CriarSessão();
             l.Close();
             c.Show();
+            */
         }
 
         private void ButtonCadastro_Click(object sender, EventArgs e)

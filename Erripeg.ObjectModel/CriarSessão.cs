@@ -20,8 +20,8 @@ namespace Erripeg.ObjectModel
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ConnectionsQuerys c = new ConnectionsQuerys();
-            c.CreateSession(sessionStoryRichTextBox.Text.Trim(),sessionNameTextBox.Text.Trim(), sessionPasswordTextBox.Text.Trim());
+            //ConnectionsQuerys c = new ConnectionsQuerys();
+            //c.CreateSession(sessionStoryRichTextBox.Text.Trim(),sessionNameTextBox.Text.Trim(), sessionPasswordTextBox.Text.Trim());
         }
 
         private void CriarSessão_Load(object sender, EventArgs e)

@@ -62,13 +62,9 @@ namespace ObjectModel
                 {
                     reader.Read();
                     var id = reader.GetOrdinal("id");
-                    //string pawg = reader.GetString(id);
-                    string nha = "lha";
-                    string nhas = "NHAS";
-                    //Usuario.id = int.Parse(pawg);
-                    Usuario.login = reader.GetString(1);
-                    Usuario.senha = reader.GetString(2);
-                    var role = reader.GetString(3);
+                    Usuario.id = reader.GetInt32(id);
+                    Usuario.login = reader.GetString(reader.GetOrdinal("login"));
+                    Usuario.senha = reader.GetString(reader.GetOrdinal("password"));
                     reader.Close();
                     cmd.Dispose();
                     connection.Disconnect();
