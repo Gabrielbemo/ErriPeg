@@ -16,5 +16,12 @@ namespace Erripeg.ObjectModel
         {
             InitializeComponent();
         }
+
+        private void createSessionButton_Click(object sender, EventArgs e)
+        {
+
+            CriarSessão c = new CriarSessão();
+            c.Show();
+        }
     }
 }

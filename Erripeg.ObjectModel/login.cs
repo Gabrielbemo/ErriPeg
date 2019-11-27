@@ -24,7 +24,11 @@ namespace Erripeg.ObjectModel
             ConnectionsQuerys con = new ConnectionsQuerys();
             if(con.CheckLogin(textBoxLogin.Text.Trim(), textBoxSenha.Text.Trim())== true)
             {
+                Login l = new Login();
                 MessageBox.Show("Sucesso");
+                SelectSession s = new SelectSession();
+                s.Show();
+                l.Close();
             }
             else
             {

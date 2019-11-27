@@ -31,6 +31,7 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.selectSessionLabel = new System.Windows.Forms.Label();
             this.selectSessionButton = new System.Windows.Forms.Button();
+            this.createSessionButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -57,18 +58,29 @@
             // 
             // selectSessionButton
             // 
-            this.selectSessionButton.Location = new System.Drawing.Point(348, 346);
+            this.selectSessionButton.Location = new System.Drawing.Point(279, 345);
             this.selectSessionButton.Name = "selectSessionButton";
             this.selectSessionButton.Size = new System.Drawing.Size(96, 26);
             this.selectSessionButton.TabIndex = 2;
             this.selectSessionButton.Text = "Select Session";
             this.selectSessionButton.UseVisualStyleBackColor = true;
             // 
+            // createSessionButton
+            // 
+            this.createSessionButton.Location = new System.Drawing.Point(411, 345);
+            this.createSessionButton.Name = "createSessionButton";
+            this.createSessionButton.Size = new System.Drawing.Size(96, 26);
+            this.createSessionButton.TabIndex = 3;
+            this.createSessionButton.Text = "Create Session";
+            this.createSessionButton.UseVisualStyleBackColor = true;
+            this.createSessionButton.Click += new System.EventHandler(this.createSessionButton_Click);
+            // 
             // SelectSession
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.createSessionButton);
             this.Controls.Add(this.selectSessionButton);
             this.Controls.Add(this.selectSessionLabel);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -84,5 +96,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label selectSessionLabel;
         private System.Windows.Forms.Button selectSessionButton;
+        private System.Windows.Forms.Button createSessionButton;
     }
 }

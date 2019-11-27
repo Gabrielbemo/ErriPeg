@@ -20,8 +20,15 @@ namespace Erripeg.ObjectModel
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //ConnectionsQuerys c = new ConnectionsQuerys();
-            //c.CreateSession(sessionStoryRichTextBox.Text.Trim(),sessionNameTextBox.Text.Trim(), sessionPasswordTextBox.Text.Trim());
+            ConnectionsQuerys c = new ConnectionsQuerys();
+            try { 
+                c.CreateSession(sessionStoryRichTextBox.Text.Trim(),sessionNameTextBox.Text.Trim(), sessionPasswordTextBox.Text.Trim());
+                MessageBox.Show("Sessão criada com sucesso");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Não foi possível criar a sessão");
+            }
         }
 
         private void CriarSessão_Load(object sender, EventArgs e)

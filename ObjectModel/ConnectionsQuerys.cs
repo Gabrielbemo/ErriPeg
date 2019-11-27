@@ -85,5 +85,26 @@ namespace ObjectModel
                 return false;
             }
         }
+        public void CreateSession(String history, String nome, String password)
+        {
+            cmd.CommandText = "INSERT INTO section (history,nome,password)values(@history,@nome,@password)";
+
+            cmd.Parameters.AddWithValue("@history", history);
+            cmd.Parameters.AddWithValue("@nome", nome);
+            cmd.Parameters.AddWithValue("@password", password);
+
+            try
+            {
+                cmd.Connection = connection.Connect();
+                cmd.ExecuteNonQuery();
+                connection.Disconnect();
+            }
+            catch (SqlException)
+            {
+                throw;
+            }
+
+
+        }
     }
 }
