@@ -60,11 +60,15 @@ namespace ObjectModel
                 reader = cmd.ExecuteReader();
                 if (reader.HasRows)
                 {
-                    //reader.Read();
-                    var pawg = reader.GetString(0);
-                    Usuario.id = int.Parse(pawg);
+                    reader.Read();
+                    var id = reader.GetOrdinal("id");
+                    //string pawg = reader.GetString(id);
+                    string nha = "lha";
+                    string nhas = "NHAS";
+                    //Usuario.id = int.Parse(pawg);
                     Usuario.login = reader.GetString(1);
                     Usuario.senha = reader.GetString(2);
+                    var role = reader.GetString(3);
                     reader.Close();
                     cmd.Dispose();
                     connection.Disconnect();
