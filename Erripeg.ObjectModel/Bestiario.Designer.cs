@@ -32,7 +32,7 @@
             this.creatureCreateButton = new System.Windows.Forms.Button();
             this.creatureSearchLabel = new System.Windows.Forms.Label();
             this.creatureSearchButton = new System.Windows.Forms.Button();
-            this.creatureSearchTextBox = new System.Windows.Forms.TextBox();
+            this.c = new System.Windows.Forms.TextBox();
             this.creatureConstitutionLabel = new System.Windows.Forms.Label();
             this.creatureConstitutionTextBox = new System.Windows.Forms.TextBox();
             this.creatureCharismaTextBox = new System.Windows.Forms.TextBox();
@@ -87,6 +87,7 @@
             this.creatureCreateButton.TabIndex = 79;
             this.creatureCreateButton.Text = "Create creature";
             this.creatureCreateButton.UseVisualStyleBackColor = true;
+            this.creatureCreateButton.Click += new System.EventHandler(this.CreatureCreateButton_Click);
             // 
             // creatureSearchLabel
             // 
@@ -105,13 +106,15 @@
             this.creatureSearchButton.TabIndex = 77;
             this.creatureSearchButton.Text = "Search creature";
             this.creatureSearchButton.UseVisualStyleBackColor = true;
+            this.creatureSearchButton.Click += new System.EventHandler(this.CreatureSearchButton_Click);
             // 
-            // creatureSearchTextBox
+            // c
             // 
-            this.creatureSearchTextBox.Location = new System.Drawing.Point(250, 329);
-            this.creatureSearchTextBox.Name = "creatureSearchTextBox";
-            this.creatureSearchTextBox.Size = new System.Drawing.Size(248, 20);
-            this.creatureSearchTextBox.TabIndex = 76;
+            this.c.Location = new System.Drawing.Point(250, 329);
+            this.c.Name = "c";
+            this.c.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.c.Size = new System.Drawing.Size(248, 20);
+            this.c.TabIndex = 76;
             // 
             // creatureConstitutionLabel
             // 
@@ -398,7 +401,7 @@
             this.Controls.Add(this.creatureCreateButton);
             this.Controls.Add(this.creatureSearchLabel);
             this.Controls.Add(this.creatureSearchButton);
-            this.Controls.Add(this.creatureSearchTextBox);
+            this.Controls.Add(this.c);
             this.Controls.Add(this.creatureConstitutionLabel);
             this.Controls.Add(this.creatureConstitutionTextBox);
             this.Controls.Add(this.creatureCharismaTextBox);
@@ -447,7 +450,7 @@
         private System.Windows.Forms.Button creatureCreateButton;
         private System.Windows.Forms.Label creatureSearchLabel;
         private System.Windows.Forms.Button creatureSearchButton;
-        private System.Windows.Forms.TextBox creatureSearchTextBox;
+        private System.Windows.Forms.TextBox c;
         private System.Windows.Forms.Label creatureConstitutionLabel;
         private System.Windows.Forms.TextBox creatureConstitutionTextBox;
         private System.Windows.Forms.TextBox creatureCharismaTextBox;

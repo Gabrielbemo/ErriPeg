@@ -26,7 +26,7 @@ namespace Erripeg.ObjectModel
             {
                 Login l = new Login();
                 MessageBox.Show("Sucesso");
-                SelectSession s = new SelectSession();
+                Bestiario s = new Bestiario();
                 s.Show();
                 l.Close();
             }

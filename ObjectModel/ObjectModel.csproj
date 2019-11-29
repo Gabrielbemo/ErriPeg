@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BestiarioDAO.cs" />
     <Compile Include="ConnectionsQuerys.cs" />
     <Compile Include="Usuario.cs" />
     <Compile Include="Connection.cs" />

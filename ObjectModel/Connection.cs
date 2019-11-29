@@ -15,7 +15,7 @@ namespace ObjectModel
         {
             // hello world
             // banco pedro paulo // 
-            con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\GIT\bruh\banco\Erripeg.mdf;Integrated Security=True;Connect Timeout=30";
+            con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=C:\USERS\GABRI\DESKTOP\BANCO\ERRIPEG.MDF;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         }
 
         public SqlConnection Connect()
