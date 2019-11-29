@@ -23,5 +23,10 @@ namespace Erripeg.ObjectModel
             CriarSessão c = new CriarSessão();
             c.Show();
         }
+
+        private void selectSessionDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

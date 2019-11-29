@@ -28,24 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.selectSessionLabel = new System.Windows.Forms.Label();
             this.selectSessionButton = new System.Windows.Forms.Button();
             this.createSessionButton = new System.Windows.Forms.Button();
+            this.selectSessionDataGridView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.selectSessionDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.5F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.5F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 44);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 52F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(776, 272);
-            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // selectSessionLabel
             // 
@@ -75,27 +63,36 @@
             this.createSessionButton.UseVisualStyleBackColor = true;
             this.createSessionButton.Click += new System.EventHandler(this.createSessionButton_Click);
             // 
+            // selectSessionDataGridView
+            // 
+            this.selectSessionDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.selectSessionDataGridView.Location = new System.Drawing.Point(12, 25);
+            this.selectSessionDataGridView.Name = "selectSessionDataGridView";
+            this.selectSessionDataGridView.Size = new System.Drawing.Size(776, 314);
+            this.selectSessionDataGridView.TabIndex = 4;
+            this.selectSessionDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.selectSessionDataGridView_CellContentClick);
+            // 
             // SelectSession
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.selectSessionDataGridView);
             this.Controls.Add(this.createSessionButton);
             this.Controls.Add(this.selectSessionButton);
             this.Controls.Add(this.selectSessionLabel);
-            this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "SelectSession";
             this.Text = "SelectSession";
+            ((System.ComponentModel.ISupportInitialize)(this.selectSessionDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label selectSessionLabel;
         private System.Windows.Forms.Button selectSessionButton;
         private System.Windows.Forms.Button createSessionButton;
+        private System.Windows.Forms.DataGridView selectSessionDataGridView;
     }
 }

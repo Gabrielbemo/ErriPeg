@@ -28,26 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.characterUpdateButton = new System.Windows.Forms.Button();
             this.spellCreateButton = new System.Windows.Forms.Button();
             this.spellSearchButton = new System.Windows.Forms.Button();
             this.spellDeleteButton = new System.Windows.Forms.Button();
             this.spellListLabel = new System.Windows.Forms.Label();
+            this.selectSpellDataGridView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.selectSpellDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 39);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(645, 293);
-            this.tableLayoutPanel1.TabIndex = 91;
             // 
             // characterUpdateButton
             // 
@@ -94,12 +82,21 @@
             this.spellListLabel.TabIndex = 86;
             this.spellListLabel.Text = "Spell List";
             // 
+            // selectSpellDataGridView
+            // 
+            this.selectSpellDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.selectSpellDataGridView.Location = new System.Drawing.Point(15, 39);
+            this.selectSpellDataGridView.Name = "selectSpellDataGridView";
+            this.selectSpellDataGridView.Size = new System.Drawing.Size(647, 326);
+            this.selectSpellDataGridView.TabIndex = 91;
+            this.selectSpellDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
             // ListaMagias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(674, 450);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.selectSpellDataGridView);
             this.Controls.Add(this.characterUpdateButton);
             this.Controls.Add(this.spellCreateButton);
             this.Controls.Add(this.spellSearchButton);
@@ -107,18 +104,18 @@
             this.Controls.Add(this.spellListLabel);
             this.Name = "ListaMagias";
             this.Text = "ListaMagias";
+            ((System.ComponentModel.ISupportInitialize)(this.selectSpellDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button characterUpdateButton;
         private System.Windows.Forms.Button spellCreateButton;
         private System.Windows.Forms.Button spellSearchButton;
         private System.Windows.Forms.Button spellDeleteButton;
         private System.Windows.Forms.Label spellListLabel;
+        private System.Windows.Forms.DataGridView selectSpellDataGridView;
     }
 }

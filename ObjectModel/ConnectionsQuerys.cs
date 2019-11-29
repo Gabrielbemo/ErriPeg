@@ -106,5 +106,30 @@ namespace ObjectModel
 
 
         }
+        //spellNameTextBox.Text.Trim(), spellDamageTextBox.Text.Trim(),
+        //spellCostTextBox.Text.Trim(), spellCooldownTextBox.Text.Trim(), spellCooldownPrefixTextBox.Text.Trim()
+        public void CreateSpell(String spellName, String spellDamage, String spellCost, String spellCooldown,
+            String spellCooldownPrefix )
+        {
+            cmd.CommandText = "insert into spells (name,damage,cost,cooldown,prefix) values " +
+                "(@spellName,@spellDamage,@spellCost,@spellCooldown,@spellCooldownPrefix)";
+
+            cmd.Parameters.AddWithValue("@spellName", spellName);
+            cmd.Parameters.AddWithValue("@spellDamage", spellDamage);
+            cmd.Parameters.AddWithValue("@spellCost", spellCost);
+            cmd.Parameters.AddWithValue("@spellCooldown", spellCooldown);
+            cmd.Parameters.AddWithValue("@spellCooldownPrefix", spellCooldownPrefix);
+
+            try
+            {
+                cmd.Connection = connection.Connect();
+                cmd.ExecuteNonQuery();
+                connection.Disconnect();
+            }
+            catch(SqlException)
+            {
+                throw;
+            }
+        }
     }
 }

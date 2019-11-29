@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ObjectModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,18 @@ namespace Erripeg.ObjectModel
         public CriaçãoMagias()
         {
             InitializeComponent();
+        }
+
+        private void CriaçãoMagias_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void createSpellButton_Click(object sender, EventArgs e)
+        {
+            ConnectionsQuerys q = new ConnectionsQuerys();
+            q.CreateSpell(spellNameTextBox.Text.Trim(), spellDamageTextBox.Text.Trim(),
+                spellCostTextBox.Text.Trim(), spellCooldownTextBox.Text.Trim(), spellCooldownPrefixTextBox.Text.Trim());
         }
     }
 }

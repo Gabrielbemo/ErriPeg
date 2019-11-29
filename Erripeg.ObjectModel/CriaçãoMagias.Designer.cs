@@ -36,7 +36,7 @@
             this.spellCostLabel = new System.Windows.Forms.Label();
             this.spellCostTextBox = new System.Windows.Forms.TextBox();
             this.spellDamageLabel = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.spellDamageTextBox = new System.Windows.Forms.TextBox();
             this.spellNameTextBox = new System.Windows.Forms.TextBox();
             this.spellNameLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -49,6 +49,7 @@
             this.createSpellButton.TabIndex = 21;
             this.createSpellButton.Text = "Create spell";
             this.createSpellButton.UseVisualStyleBackColor = true;
+            this.createSpellButton.Click += new System.EventHandler(this.createSpellButton_Click);
             // 
             // spellCooldownPrefixLabel
             // 
@@ -107,12 +108,12 @@
             this.spellDamageLabel.TabIndex = 14;
             this.spellDamageLabel.Text = "Spell damage:";
             // 
-            // textBox2
+            // spellDamageTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(66, 128);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 13;
+            this.spellDamageTextBox.Location = new System.Drawing.Point(66, 128);
+            this.spellDamageTextBox.Name = "spellDamageTextBox";
+            this.spellDamageTextBox.Size = new System.Drawing.Size(100, 20);
+            this.spellDamageTextBox.TabIndex = 13;
             // 
             // spellNameTextBox
             // 
@@ -143,11 +144,12 @@
             this.Controls.Add(this.spellCostLabel);
             this.Controls.Add(this.spellCostTextBox);
             this.Controls.Add(this.spellDamageLabel);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.spellDamageTextBox);
             this.Controls.Add(this.spellNameTextBox);
             this.Controls.Add(this.spellNameLabel);
             this.Name = "CriaçãoMagias";
             this.Text = "CriaçãoMagias";
+            this.Load += new System.EventHandler(this.CriaçãoMagias_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,7 +165,7 @@
         private System.Windows.Forms.Label spellCostLabel;
         private System.Windows.Forms.TextBox spellCostTextBox;
         private System.Windows.Forms.Label spellDamageLabel;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox spellDamageTextBox;
         private System.Windows.Forms.TextBox spellNameTextBox;
         private System.Windows.Forms.Label spellNameLabel;
     }
