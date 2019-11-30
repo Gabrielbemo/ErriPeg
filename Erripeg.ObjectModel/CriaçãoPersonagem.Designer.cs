@@ -87,6 +87,7 @@
             this.characterCreateButton.TabIndex = 118;
             this.characterCreateButton.Text = "Create character";
             this.characterCreateButton.UseVisualStyleBackColor = true;
+            this.characterCreateButton.Click += new System.EventHandler(this.characterCreateButton_Click);
             // 
             // characterSearchLabel
             // 
@@ -435,6 +436,7 @@
             this.Controls.Add(this.characterImagePictureBox);
             this.Name = "CriaçãoPersonagem";
             this.Text = "CriaçãoPersonagem";
+            this.Load += new System.EventHandler(this.CriaçãoPersonagem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.characterImagePictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

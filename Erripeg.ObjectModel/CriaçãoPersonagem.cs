@@ -16,5 +16,15 @@ namespace Erripeg.ObjectModel
         {
             InitializeComponent();
         }
+
+        private void CriaçãoPersonagem_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void characterCreateButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
