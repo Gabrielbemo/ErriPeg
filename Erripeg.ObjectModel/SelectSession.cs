@@ -1,7 +1,9 @@
-﻿using System;
+﻿using ObjectModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,16 +17,27 @@ namespace Erripeg.ObjectModel
         public SelectSession()
         {
             InitializeComponent();
+            ShowSessions();
         }
-
-        private void createSessionButton_Click(object sender, EventArgs e)
+        private void ShowSessions()
+        {
+            ConnectionsQuerys con = new ConnectionsQuerys();
+            SqlDataReader reader = con.GetSessions();
+            SessionDataGridView.DataSource = reader;
+        }
+        private void CreateSessionButton_Click(object sender, EventArgs e)
         {
 
             CriarSessão c = new CriarSessão();
             c.Show();
         }
 
-        private void selectSessionDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void SelectSessionDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void SelectSession_Load(object sender, EventArgs e)
         {
 
         }

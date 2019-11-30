@@ -31,8 +31,8 @@
             this.selectSessionLabel = new System.Windows.Forms.Label();
             this.selectSessionButton = new System.Windows.Forms.Button();
             this.createSessionButton = new System.Windows.Forms.Button();
-            this.selectSessionDataGridView = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.selectSessionDataGridView)).BeginInit();
+            this.SessionDataGridView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.SessionDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // selectSessionLabel
@@ -61,29 +61,30 @@
             this.createSessionButton.TabIndex = 3;
             this.createSessionButton.Text = "Create Session";
             this.createSessionButton.UseVisualStyleBackColor = true;
-            this.createSessionButton.Click += new System.EventHandler(this.createSessionButton_Click);
+            this.createSessionButton.Click += new System.EventHandler(this.CreateSessionButton_Click);
             // 
-            // selectSessionDataGridView
+            // SessionDataGridView
             // 
-            this.selectSessionDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.selectSessionDataGridView.Location = new System.Drawing.Point(12, 25);
-            this.selectSessionDataGridView.Name = "selectSessionDataGridView";
-            this.selectSessionDataGridView.Size = new System.Drawing.Size(776, 314);
-            this.selectSessionDataGridView.TabIndex = 4;
-            this.selectSessionDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.selectSessionDataGridView_CellContentClick);
+            this.SessionDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.SessionDataGridView.Location = new System.Drawing.Point(12, 25);
+            this.SessionDataGridView.Name = "SessionDataGridView";
+            this.SessionDataGridView.Size = new System.Drawing.Size(776, 314);
+            this.SessionDataGridView.TabIndex = 4;
+            this.SessionDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SelectSessionDataGridView_CellContentClick);
             // 
             // SelectSession
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.selectSessionDataGridView);
+            this.Controls.Add(this.SessionDataGridView);
             this.Controls.Add(this.createSessionButton);
             this.Controls.Add(this.selectSessionButton);
             this.Controls.Add(this.selectSessionLabel);
             this.Name = "SelectSession";
             this.Text = "SelectSession";
-            ((System.ComponentModel.ISupportInitialize)(this.selectSessionDataGridView)).EndInit();
+            this.Load += new System.EventHandler(this.SelectSession_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.SessionDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -93,6 +94,6 @@
         private System.Windows.Forms.Label selectSessionLabel;
         private System.Windows.Forms.Button selectSessionButton;
         private System.Windows.Forms.Button createSessionButton;
-        private System.Windows.Forms.DataGridView selectSessionDataGridView;
+        private System.Windows.Forms.DataGridView SessionDataGridView;
     }
 }

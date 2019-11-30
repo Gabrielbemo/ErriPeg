@@ -12,26 +12,36 @@ namespace ObjectModel
     {
         readonly Connection connection = new Connection();
         SqlCommand cmd = new SqlCommand();
-
+        public SqlDataReader GetSessions()
+        {
+            string sql = "Select * from Section";
+            return GetSqlDataReader(sql);
+        }
         public void Register(String login, String senha)
-        {   
+        {
             cmd.CommandText = "INSERT INTO Player (login,password)values(@login,@senha)";
-            
             cmd.Parameters.AddWithValue("@login", login);
             cmd.Parameters.AddWithValue("@senha", senha);
-
             try
             {
+
                 cmd.Connection = connection.Connect();
                 cmd.ExecuteNonQuery();
                 connection.Disconnect();
+
             }
             catch (SqlException)
             {
                 throw;
             }
-            
 
+
+        }
+        public SqlDataReader GetSqlDataReader(string sql)
+        {
+            cmd.Connection = connection.Connect();
+            cmd = new SqlCommand(sql, cmd.Connection);
+            return cmd.ExecuteReader();
         }
         public Boolean CheckLogin(string login, string senha)
         {
@@ -55,9 +65,7 @@ namespace ObjectModel
                 " and password = \'" + senha + "\' ";
             try
             {
-                cmd.Connection = connection.Connect();
-                cmd = new SqlCommand(sql, cmd.Connection);
-                reader = cmd.ExecuteReader();
+                reader = GetSqlDataReader(sql);
                 if (reader.HasRows)
                 {
                     reader.Read();
