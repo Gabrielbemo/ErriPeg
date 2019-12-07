@@ -33,8 +33,16 @@ create table section(
 create table section_player(
   player_id int references player(id),
   section_id int references section(id)
-)
-create table character(
+);
+create table spells(
+   id int identity primary key,
+   name varchar(45),
+   damage float,
+   cost float,
+   cooldown time(0),
+   prefix varchar (50)
+);
+create table characters(
     id int identity primary key,
     name varchar(200),
     sex varchar(1),
@@ -47,7 +55,7 @@ create table character(
     section_id int references section(id),
     attributes_id int references attributes(id),
     player_id int references player(id),
-    inventory_id references inventory(id)
+    inventory_id int references inventory(id)
 );
 create table creatures(
     id int identity primary key,
@@ -79,7 +87,7 @@ create table conditions_creatures(
 );
 create table conditions_character(
     conditions_id int references conditions(id),
-    character_id int references character(id)
+    character_id int references characters(id)
 );
 create table inventory(
     id int identity primary key,
@@ -134,20 +142,11 @@ create table conditions_potions(
     potions_id int references potions(id)
 );
 
-create table spells(
-   id int identity primary key,
-   name varchar(45),
-   damage float,
-   cost float,
-   cooldown time(0),
-   prefix varchar (50)
-)
-
 create table player_spells(
    player_id int references player(id),
    spell_id int references spells(id)
-)
+);
 create table spells_conditions(
    spell_id int references spells(id),
    conditions_id int references conditions(id) 
-)
+);
