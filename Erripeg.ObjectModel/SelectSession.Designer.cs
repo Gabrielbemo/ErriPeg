@@ -30,8 +30,8 @@
         {
             this.selectSessionLabel = new System.Windows.Forms.Label();
             this.createSessionButton = new System.Windows.Forms.Button();
-            this.selectSessionDataGridView = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.selectSessionDataGridView)).BeginInit();
+            this.SessionDataGridView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.SessionDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // selectSessionLabel
@@ -51,9 +51,9 @@
             this.createSessionButton.TabIndex = 3;
             this.createSessionButton.Text = "Create Session";
             this.createSessionButton.UseVisualStyleBackColor = true;
-            this.createSessionButton.Click += new System.EventHandler(this.createSessionButton_Click);
+            this.createSessionButton.Click += new System.EventHandler(this.CreateSessionButton_Click);
             // 
-            // selectSessionDataGridView
+            // SessionDataGridView
             // 
             this.selectSessionDataGridView.AllowUserToAddRows = false;
             this.selectSessionDataGridView.AllowUserToDeleteRows = false;
@@ -70,12 +70,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.selectSessionDataGridView);
+            this.Controls.Add(this.SessionDataGridView);
             this.Controls.Add(this.createSessionButton);
             this.Controls.Add(this.selectSessionLabel);
             this.Name = "SelectSession";
             this.Text = "SelectSession";
-            ((System.ComponentModel.ISupportInitialize)(this.selectSessionDataGridView)).EndInit();
+            this.Load += new System.EventHandler(this.SelectSession_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.SessionDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -84,6 +85,6 @@
         #endregion
         private System.Windows.Forms.Label selectSessionLabel;
         private System.Windows.Forms.Button createSessionButton;
-        private System.Windows.Forms.DataGridView selectSessionDataGridView;
+        private System.Windows.Forms.DataGridView SessionDataGridView;
     }
 }

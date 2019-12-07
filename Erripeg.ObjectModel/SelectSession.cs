@@ -27,15 +27,25 @@ namespace Erripeg.ObjectModel
             selectSessionDataGridView.Columns[1].HeaderText = "historia";
             selectSessionDataGridView.Columns[1].Width = 432;
         }
-
-        private void createSessionButton_Click(object sender, EventArgs e)
+        private void ShowSessions()
+        {
+            ConnectionsQuerys con = new ConnectionsQuerys();
+            SqlDataReader reader = con.GetSessions();
+            SessionDataGridView.DataSource = reader;
+        }
+        private void CreateSessionButton_Click(object sender, EventArgs e)
         {
             CriarSessão c = new CriarSessão();
             c.Show();
             this.Dispose();
         }
 
-        private void selectSessionDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void SelectSessionDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void SelectSession_Load(object sender, EventArgs e)
         {
             
         }
