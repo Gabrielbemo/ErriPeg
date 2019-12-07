@@ -46,9 +46,14 @@ namespace Erripeg.ObjectModel
 
         private void ButtonCadastro_Click(object sender, EventArgs e)
         {
-            ConnectionsQuerys con = new ConnectionsQuerys();
-            con.Register(textBoxLogin.Text, textBoxSenha.Text);
-            MessageBox.Show("Registrado com sucesso");
+            if (textBoxLogin.Text.Length > 4 && textBoxSenha.Text.Length > 7) {
+                ConnectionsQuerys con = new ConnectionsQuerys();
+                con.Register(textBoxLogin.Text, textBoxSenha.Text);
+                MessageBox.Show("Registrado com sucesso");
+            }
+            else {
+                MessageBox.Show("O login deve conter ao menos 5 caracteres \n Senhas devem conter ao menos 8 caracteres");
+            }
         }
 
         private void Login_Load(object sender, EventArgs e)
