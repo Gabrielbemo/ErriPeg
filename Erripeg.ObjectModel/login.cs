@@ -46,7 +46,8 @@ namespace Erripeg.ObjectModel
 
         private void ButtonCadastro_Click(object sender, EventArgs e)
         {
-            if (textBoxLogin.Text.Length > 4 && textBoxSenha.Text.Length > 7) {
+            if (textBoxLogin.Text.Length > 4 && textBoxSenha.Text.Length > 7)
+            {
                 ConnectionsQuerys con = new ConnectionsQuerys();
                 con.Register(textBoxLogin.Text, textBoxSenha.Text);
                 MessageBox.Show("Registrado com sucesso");

@@ -30,7 +30,9 @@ namespace Erripeg.ObjectModel
 
         private void ListaMagias_Load(object sender, EventArgs e)
         {
-
+            ConnectionsQuerys con = new ConnectionsQuerys();
+            SqlDataReader reader = con.SelectSpells();
+            selectSpellDataGridView.DataSource = reader;
         }
 
         private void spellSearchButton_Click(object sender, EventArgs e)

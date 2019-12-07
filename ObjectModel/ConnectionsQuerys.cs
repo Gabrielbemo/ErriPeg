@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ObjectModel
 {
@@ -140,46 +141,9 @@ namespace ObjectModel
                 throw;
             }
         }
-        public void SelectSpells()
+        public SqlDataReader SelectSpells()
         {
-            //n ta pegando
-            string sql;
-            SqlDataReader reader;
-            try
-            {
-                cmd.Connection = connection.Connect();
-                cmd = new SqlCommand("select * from spells;", cmd.Connection);
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                reader = cmd.ExecuteReader();
-                if (reader.HasRows)
-                {
-                    DataTable dt = new DataTable();
-                    reader.Read();
-                    var id = reader.GetOrdinal("id");
-                    Spells.id = reader.GetInt32(id);
-                    Spells.name = reader.GetString(reader.GetOrdinal("name"));
-                    Spells.damage = reader.GetFloat(reader.GetOrdinal("damage"));
-                    Spells.cost = reader.GetFloat(reader.GetOrdinal("cost"));
-                    Spells.cooldown = reader.GetString(reader.GetOrdinal("cooldown"));
-                    Spells.prefix = reader.GetString(reader.GetOrdinal("prefix"));
-                    da.Fill(dt);
-                    reader.Close();
-                    cmd.Dispose();
-                    connection.Disconnect();
-
-                }
-                else
-                {
-                    reader.Close();
-                    cmd.Dispose();
-                    connection.Disconnect();
-                }
-
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            return GetSqlDataReader("select * from spells;");
         }
         public void DeleteSpells(int id)
         {
