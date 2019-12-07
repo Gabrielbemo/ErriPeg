@@ -22,8 +22,11 @@ namespace Erripeg.ObjectModel
         {
             ConnectionsQuerys c = new ConnectionsQuerys();
             try { 
-                c.CreateSession(sessionStoryRichTextBox.Text.Trim(),sessionNameTextBox.Text.Trim(), sessionPasswordTextBox.Text.Trim());
+                c.CreateSession(sessionStoryRichTextBox.Text.Trim(),sessionNameTextBox.Text.Trim(), checkBox1.Text);
                 MessageBox.Show("Sessão criada com sucesso");
+                SelectSession sss = new SelectSession();
+                sss.Show();
+                this.Dispose();
             }
             catch(Exception ex)
             {
@@ -39,7 +42,16 @@ namespace Erripeg.ObjectModel
         private void selectSessionButton_Click(object sender, EventArgs e)
         {
             SelectSession s = new SelectSession();
+            MessageBox.Show("o"+Usuario.id + Usuario.login);
             s.Show();
+            this.Dispose();
+        }
+
+        private void Button1_Click_1(object sender, EventArgs e)
+        {
+            SelectSession ss = new SelectSession();
+            ss.Show();
+            this.Dispose();
         }
     }
 }

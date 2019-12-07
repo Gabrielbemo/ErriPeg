@@ -33,13 +33,6 @@
             this.creatureSearchLabel = new System.Windows.Forms.Label();
             this.creatureSearchButton = new System.Windows.Forms.Button();
             this.c = new System.Windows.Forms.TextBox();
-            this.creatureConstitutionLabel = new System.Windows.Forms.Label();
-            this.creatureConstitutionTextBox = new System.Windows.Forms.TextBox();
-            this.creatureCharismaTextBox = new System.Windows.Forms.TextBox();
-            this.creatureWisdomTextBox = new System.Windows.Forms.TextBox();
-            this.creatureDexterityTextBox = new System.Windows.Forms.TextBox();
-            this.creatureIntelligenceTextBox = new System.Windows.Forms.TextBox();
-            this.creatureStrengthTextBox = new System.Windows.Forms.TextBox();
             this.creatureBackgroundLabel = new System.Windows.Forms.Label();
             this.creatureXpTextBox = new System.Windows.Forms.TextBox();
             this.creatureLvlTextBox = new System.Windows.Forms.TextBox();
@@ -53,13 +46,7 @@
             this.creatureIdTextBox = new System.Windows.Forms.TextBox();
             this.creatureDeleteButton = new System.Windows.Forms.Button();
             this.creatureBackgroundRichTextBox = new System.Windows.Forms.RichTextBox();
-            this.creatureWisdomLabel = new System.Windows.Forms.Label();
-            this.creatureCharismaLabel = new System.Windows.Forms.Label();
-            this.creatureIntelligenceLabel = new System.Windows.Forms.Label();
-            this.creatureAttributesLabel = new System.Windows.Forms.Label();
-            this.creatureDexterityLabel = new System.Windows.Forms.Label();
             this.creatureIdLabel = new System.Windows.Forms.Label();
-            this.creatureStrengthLabel = new System.Windows.Forms.Label();
             this.creatureXpLabel = new System.Windows.Forms.Label();
             this.creatureHeightLabel = new System.Windows.Forms.Label();
             this.creatureWeightLabel = new System.Windows.Forms.Label();
@@ -115,57 +102,6 @@
             this.c.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.c.Size = new System.Drawing.Size(248, 20);
             this.c.TabIndex = 76;
-            // 
-            // creatureConstitutionLabel
-            // 
-            this.creatureConstitutionLabel.AutoSize = true;
-            this.creatureConstitutionLabel.Location = new System.Drawing.Point(395, 266);
-            this.creatureConstitutionLabel.Name = "creatureConstitutionLabel";
-            this.creatureConstitutionLabel.Size = new System.Drawing.Size(65, 13);
-            this.creatureConstitutionLabel.TabIndex = 75;
-            this.creatureConstitutionLabel.Text = "Constitution:";
-            // 
-            // creatureConstitutionTextBox
-            // 
-            this.creatureConstitutionTextBox.Location = new System.Drawing.Point(398, 282);
-            this.creatureConstitutionTextBox.Name = "creatureConstitutionTextBox";
-            this.creatureConstitutionTextBox.Size = new System.Drawing.Size(100, 20);
-            this.creatureConstitutionTextBox.TabIndex = 74;
-            // 
-            // creatureCharismaTextBox
-            // 
-            this.creatureCharismaTextBox.Location = new System.Drawing.Point(398, 240);
-            this.creatureCharismaTextBox.Name = "creatureCharismaTextBox";
-            this.creatureCharismaTextBox.Size = new System.Drawing.Size(100, 20);
-            this.creatureCharismaTextBox.TabIndex = 73;
-            // 
-            // creatureWisdomTextBox
-            // 
-            this.creatureWisdomTextBox.Location = new System.Drawing.Point(398, 201);
-            this.creatureWisdomTextBox.Name = "creatureWisdomTextBox";
-            this.creatureWisdomTextBox.Size = new System.Drawing.Size(100, 20);
-            this.creatureWisdomTextBox.TabIndex = 72;
-            // 
-            // creatureDexterityTextBox
-            // 
-            this.creatureDexterityTextBox.Location = new System.Drawing.Point(398, 163);
-            this.creatureDexterityTextBox.Name = "creatureDexterityTextBox";
-            this.creatureDexterityTextBox.Size = new System.Drawing.Size(100, 20);
-            this.creatureDexterityTextBox.TabIndex = 71;
-            // 
-            // creatureIntelligenceTextBox
-            // 
-            this.creatureIntelligenceTextBox.Location = new System.Drawing.Point(398, 118);
-            this.creatureIntelligenceTextBox.Name = "creatureIntelligenceTextBox";
-            this.creatureIntelligenceTextBox.Size = new System.Drawing.Size(100, 20);
-            this.creatureIntelligenceTextBox.TabIndex = 70;
-            // 
-            // creatureStrengthTextBox
-            // 
-            this.creatureStrengthTextBox.Location = new System.Drawing.Point(398, 71);
-            this.creatureStrengthTextBox.Name = "creatureStrengthTextBox";
-            this.creatureStrengthTextBox.Size = new System.Drawing.Size(100, 20);
-            this.creatureStrengthTextBox.TabIndex = 69;
             // 
             // creatureBackgroundLabel
             // 
@@ -258,6 +194,7 @@
             this.creatureDeleteButton.TabIndex = 57;
             this.creatureDeleteButton.Text = "Delete creature";
             this.creatureDeleteButton.UseVisualStyleBackColor = true;
+            this.creatureDeleteButton.Click += new System.EventHandler(this.CreatureDeleteButton_Click);
             // 
             // creatureBackgroundRichTextBox
             // 
@@ -267,51 +204,6 @@
             this.creatureBackgroundRichTextBox.TabIndex = 56;
             this.creatureBackgroundRichTextBox.Text = "";
             // 
-            // creatureWisdomLabel
-            // 
-            this.creatureWisdomLabel.AutoSize = true;
-            this.creatureWisdomLabel.Location = new System.Drawing.Point(395, 186);
-            this.creatureWisdomLabel.Name = "creatureWisdomLabel";
-            this.creatureWisdomLabel.Size = new System.Drawing.Size(48, 13);
-            this.creatureWisdomLabel.TabIndex = 55;
-            this.creatureWisdomLabel.Text = "Wisdom:";
-            // 
-            // creatureCharismaLabel
-            // 
-            this.creatureCharismaLabel.AutoSize = true;
-            this.creatureCharismaLabel.Location = new System.Drawing.Point(395, 224);
-            this.creatureCharismaLabel.Name = "creatureCharismaLabel";
-            this.creatureCharismaLabel.Size = new System.Drawing.Size(53, 13);
-            this.creatureCharismaLabel.TabIndex = 54;
-            this.creatureCharismaLabel.Text = "Charisma:";
-            // 
-            // creatureIntelligenceLabel
-            // 
-            this.creatureIntelligenceLabel.AutoSize = true;
-            this.creatureIntelligenceLabel.Location = new System.Drawing.Point(395, 102);
-            this.creatureIntelligenceLabel.Name = "creatureIntelligenceLabel";
-            this.creatureIntelligenceLabel.Size = new System.Drawing.Size(64, 13);
-            this.creatureIntelligenceLabel.TabIndex = 53;
-            this.creatureIntelligenceLabel.Text = "Intelligence:";
-            // 
-            // creatureAttributesLabel
-            // 
-            this.creatureAttributesLabel.AutoSize = true;
-            this.creatureAttributesLabel.Location = new System.Drawing.Point(395, 29);
-            this.creatureAttributesLabel.Name = "creatureAttributesLabel";
-            this.creatureAttributesLabel.Size = new System.Drawing.Size(94, 13);
-            this.creatureAttributesLabel.TabIndex = 52;
-            this.creatureAttributesLabel.Text = "Creature Attributes";
-            // 
-            // creatureDexterityLabel
-            // 
-            this.creatureDexterityLabel.AutoSize = true;
-            this.creatureDexterityLabel.Location = new System.Drawing.Point(395, 147);
-            this.creatureDexterityLabel.Name = "creatureDexterityLabel";
-            this.creatureDexterityLabel.Size = new System.Drawing.Size(51, 13);
-            this.creatureDexterityLabel.TabIndex = 51;
-            this.creatureDexterityLabel.Text = "Dexterity:";
-            // 
             // creatureIdLabel
             // 
             this.creatureIdLabel.AutoSize = true;
@@ -320,15 +212,6 @@
             this.creatureIdLabel.Size = new System.Drawing.Size(64, 13);
             this.creatureIdLabel.TabIndex = 50;
             this.creatureIdLabel.Text = "Creature ID:";
-            // 
-            // creatureStrengthLabel
-            // 
-            this.creatureStrengthLabel.AutoSize = true;
-            this.creatureStrengthLabel.Location = new System.Drawing.Point(395, 55);
-            this.creatureStrengthLabel.Name = "creatureStrengthLabel";
-            this.creatureStrengthLabel.Size = new System.Drawing.Size(50, 13);
-            this.creatureStrengthLabel.TabIndex = 49;
-            this.creatureStrengthLabel.Text = "Strength:";
             // 
             // creatureXpLabel
             // 
@@ -402,13 +285,6 @@
             this.Controls.Add(this.creatureSearchLabel);
             this.Controls.Add(this.creatureSearchButton);
             this.Controls.Add(this.c);
-            this.Controls.Add(this.creatureConstitutionLabel);
-            this.Controls.Add(this.creatureConstitutionTextBox);
-            this.Controls.Add(this.creatureCharismaTextBox);
-            this.Controls.Add(this.creatureWisdomTextBox);
-            this.Controls.Add(this.creatureDexterityTextBox);
-            this.Controls.Add(this.creatureIntelligenceTextBox);
-            this.Controls.Add(this.creatureStrengthTextBox);
             this.Controls.Add(this.creatureBackgroundLabel);
             this.Controls.Add(this.creatureXpTextBox);
             this.Controls.Add(this.creatureLvlTextBox);
@@ -422,13 +298,7 @@
             this.Controls.Add(this.creatureIdTextBox);
             this.Controls.Add(this.creatureDeleteButton);
             this.Controls.Add(this.creatureBackgroundRichTextBox);
-            this.Controls.Add(this.creatureWisdomLabel);
-            this.Controls.Add(this.creatureCharismaLabel);
-            this.Controls.Add(this.creatureIntelligenceLabel);
-            this.Controls.Add(this.creatureAttributesLabel);
-            this.Controls.Add(this.creatureDexterityLabel);
             this.Controls.Add(this.creatureIdLabel);
-            this.Controls.Add(this.creatureStrengthLabel);
             this.Controls.Add(this.creatureXpLabel);
             this.Controls.Add(this.creatureHeightLabel);
             this.Controls.Add(this.creatureWeightLabel);
@@ -438,6 +308,7 @@
             this.Controls.Add(this.creatureImagePictureBox);
             this.Name = "Bestiario";
             this.Text = "Bestiario";
+            this.Load += new System.EventHandler(this.Bestiario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.creatureImagePictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -451,13 +322,6 @@
         private System.Windows.Forms.Label creatureSearchLabel;
         private System.Windows.Forms.Button creatureSearchButton;
         private System.Windows.Forms.TextBox c;
-        private System.Windows.Forms.Label creatureConstitutionLabel;
-        private System.Windows.Forms.TextBox creatureConstitutionTextBox;
-        private System.Windows.Forms.TextBox creatureCharismaTextBox;
-        private System.Windows.Forms.TextBox creatureWisdomTextBox;
-        private System.Windows.Forms.TextBox creatureDexterityTextBox;
-        private System.Windows.Forms.TextBox creatureIntelligenceTextBox;
-        private System.Windows.Forms.TextBox creatureStrengthTextBox;
         private System.Windows.Forms.Label creatureBackgroundLabel;
         private System.Windows.Forms.TextBox creatureXpTextBox;
         private System.Windows.Forms.TextBox creatureLvlTextBox;
@@ -471,13 +335,7 @@
         private System.Windows.Forms.TextBox creatureIdTextBox;
         private System.Windows.Forms.Button creatureDeleteButton;
         private System.Windows.Forms.RichTextBox creatureBackgroundRichTextBox;
-        private System.Windows.Forms.Label creatureWisdomLabel;
-        private System.Windows.Forms.Label creatureCharismaLabel;
-        private System.Windows.Forms.Label creatureIntelligenceLabel;
-        private System.Windows.Forms.Label creatureAttributesLabel;
-        private System.Windows.Forms.Label creatureDexterityLabel;
         private System.Windows.Forms.Label creatureIdLabel;
-        private System.Windows.Forms.Label creatureStrengthLabel;
         private System.Windows.Forms.Label creatureXpLabel;
         private System.Windows.Forms.Label creatureHeightLabel;
         private System.Windows.Forms.Label creatureWeightLabel;

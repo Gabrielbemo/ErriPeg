@@ -62,6 +62,7 @@ namespace ObjectModel
                 {
                     reader.Read();
                     var id = reader.GetOrdinal("id");
+
                     Usuario.id = reader.GetInt32(id);
                     Usuario.login = reader.GetString(reader.GetOrdinal("login"));
                     Usuario.senha = reader.GetString(reader.GetOrdinal("password"));
@@ -85,13 +86,13 @@ namespace ObjectModel
                 return false;
             }
         }
-        public void CreateSession(String history, String nome, String password)
+        public void CreateSession(String history, String nome, string m)
         {
-            cmd.CommandText = "INSERT INTO section (history,nome,password)values(@history,@nome,@password)";
+            cmd.CommandText = "INSERT INTO section (history,name,id_mestre )values(@history,@name,@id)";
 
             cmd.Parameters.AddWithValue("@history", history);
-            cmd.Parameters.AddWithValue("@nome", nome);
-            cmd.Parameters.AddWithValue("@password", password);
+            cmd.Parameters.AddWithValue("@name", nome);
+            cmd.Parameters.AddWithValue("@id", Usuario.id);
 
             try
             {

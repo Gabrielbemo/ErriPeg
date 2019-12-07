@@ -26,7 +26,9 @@ namespace Erripeg.ObjectModel
             {
                 Login l = new Login();
                 MessageBox.Show("Sucesso");
-                Bestiario s = new Bestiario();
+                //Bestiario s = new Bestiario();
+                SelectSession s = new SelectSession();
+                this.Hide();
                 s.Show();
                 l.Close();
             }
@@ -46,6 +48,7 @@ namespace Erripeg.ObjectModel
         {
             ConnectionsQuerys con = new ConnectionsQuerys();
             con.Register(textBoxLogin.Text, textBoxSenha.Text);
+            MessageBox.Show("Registrado com sucesso");
         }
 
         private void Login_Load(object sender, EventArgs e)

@@ -13,8 +13,12 @@ namespace ObjectModel
         readonly Connection connection = new Connection();
         SqlCommand cmd = new SqlCommand();
 
-        public void Register(string creatureConstitutionTextBox, string creatureCharismaTextBox , string creatureWisdomTextBox , string creatureDexterityTextBox , string creatureIntelligenceTextBox ,
-            string creatureStrengthTextBox , string creatureXpTextBox , string creatureLvlTextBox , string creatureNameTextBox , string creatureHeightTextBox , string creatureWeightTextBox ,
+        public void delete(int id)
+        {
+
+        }
+
+        public void Register( string creatureXpTextBox , string creatureLvlTextBox , string creatureNameTextBox , string creatureHeightTextBox , string creatureWeightTextBox ,
             string creatureManaTextBox , string creatureLifeTextBox , string creatureIdTextBox )
         {
             cmd.CommandText = "INSERT INTO Creatures (name,life,lvl,mana,weight,height,xp)values(@creatureNameTextBox,@creatureLifeTextBox,@creatureLvlTextBox,@creatureManaTextBox,@creatureWeightTextBox,@creatureHeightTextBox,@creatureXpTextBox)";
@@ -40,7 +44,7 @@ namespace ObjectModel
 
 
         }
-        public string Search(string id)
+        public creature Search(string id)
         {
             string sql;
             SqlDataReader reader;
@@ -48,6 +52,7 @@ namespace ObjectModel
             sql = "Select * from creatures where id = \'" + int.Parse(id) + "\' ";
             try
             {
+                creature c = new creature();
                 cmd.Connection = connection.Connect();
                 cmd = new SqlCommand(sql, cmd.Connection);
                 reader = cmd.ExecuteReader();
@@ -55,10 +60,18 @@ namespace ObjectModel
                 {
                     reader.Read();
                     string name = reader.GetString(reader.GetOrdinal("name"));
+                    
+                    c.name = reader.GetString(reader.GetOrdinal("name"));
+                    c.life = reader.GetDouble(reader.GetOrdinal("life"));
+                    c.lvl = reader.GetDouble(reader.GetOrdinal("lvl"));
+                    c.mana = reader.GetDouble(reader.GetOrdinal("mana"));
+                    c.weight = reader.GetDouble(reader.GetOrdinal("weight"));
+                    c.height = reader.GetDouble(reader.GetOrdinal("height"));
+                    c.xp = reader.GetDouble(reader.GetOrdinal("xp"));
                     reader.Close();
                     cmd.Dispose();
                     connection.Disconnect();
-                    return name;
+                    return c;
 
                 }
                 else
@@ -66,13 +79,13 @@ namespace ObjectModel
                     reader.Close();
                     cmd.Dispose();
                     connection.Disconnect();
-                    return "";
+                    return c;
                 }
 
             }
             catch (Exception)
             {
-                return "";
+                return null;
             }
         }
     }

@@ -28,18 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.characterUpdateButton = new System.Windows.Forms.Button();
             this.characterCreateButton = new System.Windows.Forms.Button();
             this.characterSearchLabel = new System.Windows.Forms.Label();
-            this.characterSearchButton = new System.Windows.Forms.Button();
             this.characterSearchTextBox = new System.Windows.Forms.TextBox();
-            this.characterConstitutionLabel = new System.Windows.Forms.Label();
-            this.characterConstitutionTextBox = new System.Windows.Forms.TextBox();
-            this.characterCharismaTextBox = new System.Windows.Forms.TextBox();
-            this.characterWisdomTextBox = new System.Windows.Forms.TextBox();
-            this.characterDexterityTextBox = new System.Windows.Forms.TextBox();
-            this.characterIntelligenceTextBox = new System.Windows.Forms.TextBox();
-            this.characterStrengthTextBox = new System.Windows.Forms.TextBox();
             this.characterBackgroundLabel = new System.Windows.Forms.Label();
             this.characterXpTextBox = new System.Windows.Forms.TextBox();
             this.characterLvlTextBox = new System.Windows.Forms.TextBox();
@@ -51,15 +42,8 @@
             this.characterManaTextBox = new System.Windows.Forms.TextBox();
             this.characterLifeTextBox = new System.Windows.Forms.TextBox();
             this.characterIdTextBox = new System.Windows.Forms.TextBox();
-            this.characterDeleteButton = new System.Windows.Forms.Button();
             this.characterBackgroundRichTextBox = new System.Windows.Forms.RichTextBox();
-            this.characterWisdomLabel = new System.Windows.Forms.Label();
-            this.characterCharismaLabel = new System.Windows.Forms.Label();
-            this.characterIntelligenceLabel = new System.Windows.Forms.Label();
-            this.characterAttributesLabel = new System.Windows.Forms.Label();
-            this.characterDexterityLabel = new System.Windows.Forms.Label();
             this.characterIdLabel = new System.Windows.Forms.Label();
-            this.characterStrengthLabel = new System.Windows.Forms.Label();
             this.characterXpLabel = new System.Windows.Forms.Label();
             this.characterHeightLabel = new System.Windows.Forms.Label();
             this.characterWeightLabel = new System.Windows.Forms.Label();
@@ -70,23 +54,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.characterImagePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // characterUpdateButton
-            // 
-            this.characterUpdateButton.Location = new System.Drawing.Point(399, 390);
-            this.characterUpdateButton.Name = "characterUpdateButton";
-            this.characterUpdateButton.Size = new System.Drawing.Size(100, 23);
-            this.characterUpdateButton.TabIndex = 119;
-            this.characterUpdateButton.Text = "Update character";
-            this.characterUpdateButton.UseVisualStyleBackColor = true;
-            // 
             // characterCreateButton
             // 
-            this.characterCreateButton.Location = new System.Drawing.Point(399, 354);
+            this.characterCreateButton.Location = new System.Drawing.Point(322, 378);
             this.characterCreateButton.Name = "characterCreateButton";
             this.characterCreateButton.Size = new System.Drawing.Size(100, 23);
             this.characterCreateButton.TabIndex = 118;
             this.characterCreateButton.Text = "Create character";
             this.characterCreateButton.UseVisualStyleBackColor = true;
+            this.characterCreateButton.Click += new System.EventHandler(this.CharacterCreateButton_Click);
             // 
             // characterSearchLabel
             // 
@@ -97,72 +73,12 @@
             this.characterSearchLabel.TabIndex = 117;
             this.characterSearchLabel.Text = "Search character by id:";
             // 
-            // characterSearchButton
-            // 
-            this.characterSearchButton.Location = new System.Drawing.Point(251, 354);
-            this.characterSearchButton.Name = "characterSearchButton";
-            this.characterSearchButton.Size = new System.Drawing.Size(100, 23);
-            this.characterSearchButton.TabIndex = 116;
-            this.characterSearchButton.Text = "Search character";
-            this.characterSearchButton.UseVisualStyleBackColor = true;
-            // 
             // characterSearchTextBox
             // 
             this.characterSearchTextBox.Location = new System.Drawing.Point(251, 328);
             this.characterSearchTextBox.Name = "characterSearchTextBox";
             this.characterSearchTextBox.Size = new System.Drawing.Size(248, 20);
             this.characterSearchTextBox.TabIndex = 115;
-            // 
-            // characterConstitutionLabel
-            // 
-            this.characterConstitutionLabel.AutoSize = true;
-            this.characterConstitutionLabel.Location = new System.Drawing.Point(396, 265);
-            this.characterConstitutionLabel.Name = "characterConstitutionLabel";
-            this.characterConstitutionLabel.Size = new System.Drawing.Size(65, 13);
-            this.characterConstitutionLabel.TabIndex = 114;
-            this.characterConstitutionLabel.Text = "Constitution:";
-            // 
-            // characterConstitutionTextBox
-            // 
-            this.characterConstitutionTextBox.Location = new System.Drawing.Point(399, 281);
-            this.characterConstitutionTextBox.Name = "characterConstitutionTextBox";
-            this.characterConstitutionTextBox.Size = new System.Drawing.Size(100, 20);
-            this.characterConstitutionTextBox.TabIndex = 113;
-            // 
-            // characterCharismaTextBox
-            // 
-            this.characterCharismaTextBox.Location = new System.Drawing.Point(399, 239);
-            this.characterCharismaTextBox.Name = "characterCharismaTextBox";
-            this.characterCharismaTextBox.Size = new System.Drawing.Size(100, 20);
-            this.characterCharismaTextBox.TabIndex = 112;
-            // 
-            // characterWisdomTextBox
-            // 
-            this.characterWisdomTextBox.Location = new System.Drawing.Point(399, 200);
-            this.characterWisdomTextBox.Name = "characterWisdomTextBox";
-            this.characterWisdomTextBox.Size = new System.Drawing.Size(100, 20);
-            this.characterWisdomTextBox.TabIndex = 111;
-            // 
-            // characterDexterityTextBox
-            // 
-            this.characterDexterityTextBox.Location = new System.Drawing.Point(399, 162);
-            this.characterDexterityTextBox.Name = "characterDexterityTextBox";
-            this.characterDexterityTextBox.Size = new System.Drawing.Size(100, 20);
-            this.characterDexterityTextBox.TabIndex = 110;
-            // 
-            // characterIntelligenceTextBox
-            // 
-            this.characterIntelligenceTextBox.Location = new System.Drawing.Point(399, 117);
-            this.characterIntelligenceTextBox.Name = "characterIntelligenceTextBox";
-            this.characterIntelligenceTextBox.Size = new System.Drawing.Size(100, 20);
-            this.characterIntelligenceTextBox.TabIndex = 109;
-            // 
-            // characterStrengthTextBox
-            // 
-            this.characterStrengthTextBox.Location = new System.Drawing.Point(399, 70);
-            this.characterStrengthTextBox.Name = "characterStrengthTextBox";
-            this.characterStrengthTextBox.Size = new System.Drawing.Size(100, 20);
-            this.characterStrengthTextBox.TabIndex = 108;
             // 
             // characterBackgroundLabel
             // 
@@ -239,6 +155,7 @@
             this.characterLifeTextBox.Name = "characterLifeTextBox";
             this.characterLifeTextBox.Size = new System.Drawing.Size(100, 20);
             this.characterLifeTextBox.TabIndex = 98;
+            this.characterLifeTextBox.TextChanged += new System.EventHandler(this.CharacterLifeTextBox_TextChanged);
             // 
             // characterIdTextBox
             // 
@@ -246,15 +163,6 @@
             this.characterIdTextBox.Name = "characterIdTextBox";
             this.characterIdTextBox.Size = new System.Drawing.Size(100, 20);
             this.characterIdTextBox.TabIndex = 97;
-            // 
-            // characterDeleteButton
-            // 
-            this.characterDeleteButton.Location = new System.Drawing.Point(251, 390);
-            this.characterDeleteButton.Name = "characterDeleteButton";
-            this.characterDeleteButton.Size = new System.Drawing.Size(100, 23);
-            this.characterDeleteButton.TabIndex = 96;
-            this.characterDeleteButton.Text = "Delete character";
-            this.characterDeleteButton.UseVisualStyleBackColor = true;
             // 
             // characterBackgroundRichTextBox
             // 
@@ -264,51 +172,6 @@
             this.characterBackgroundRichTextBox.TabIndex = 95;
             this.characterBackgroundRichTextBox.Text = "";
             // 
-            // characterWisdomLabel
-            // 
-            this.characterWisdomLabel.AutoSize = true;
-            this.characterWisdomLabel.Location = new System.Drawing.Point(396, 185);
-            this.characterWisdomLabel.Name = "characterWisdomLabel";
-            this.characterWisdomLabel.Size = new System.Drawing.Size(48, 13);
-            this.characterWisdomLabel.TabIndex = 94;
-            this.characterWisdomLabel.Text = "Wisdom:";
-            // 
-            // characterCharismaLabel
-            // 
-            this.characterCharismaLabel.AutoSize = true;
-            this.characterCharismaLabel.Location = new System.Drawing.Point(396, 223);
-            this.characterCharismaLabel.Name = "characterCharismaLabel";
-            this.characterCharismaLabel.Size = new System.Drawing.Size(53, 13);
-            this.characterCharismaLabel.TabIndex = 93;
-            this.characterCharismaLabel.Text = "Charisma:";
-            // 
-            // characterIntelligenceLabel
-            // 
-            this.characterIntelligenceLabel.AutoSize = true;
-            this.characterIntelligenceLabel.Location = new System.Drawing.Point(396, 101);
-            this.characterIntelligenceLabel.Name = "characterIntelligenceLabel";
-            this.characterIntelligenceLabel.Size = new System.Drawing.Size(64, 13);
-            this.characterIntelligenceLabel.TabIndex = 92;
-            this.characterIntelligenceLabel.Text = "Intelligence:";
-            // 
-            // characterAttributesLabel
-            // 
-            this.characterAttributesLabel.AutoSize = true;
-            this.characterAttributesLabel.Location = new System.Drawing.Point(396, 28);
-            this.characterAttributesLabel.Name = "characterAttributesLabel";
-            this.characterAttributesLabel.Size = new System.Drawing.Size(100, 13);
-            this.characterAttributesLabel.TabIndex = 91;
-            this.characterAttributesLabel.Text = "Character Attributes";
-            // 
-            // characterDexterityLabel
-            // 
-            this.characterDexterityLabel.AutoSize = true;
-            this.characterDexterityLabel.Location = new System.Drawing.Point(396, 146);
-            this.characterDexterityLabel.Name = "characterDexterityLabel";
-            this.characterDexterityLabel.Size = new System.Drawing.Size(51, 13);
-            this.characterDexterityLabel.TabIndex = 90;
-            this.characterDexterityLabel.Text = "Dexterity:";
-            // 
             // characterIdLabel
             // 
             this.characterIdLabel.AutoSize = true;
@@ -317,15 +180,6 @@
             this.characterIdLabel.Size = new System.Drawing.Size(70, 13);
             this.characterIdLabel.TabIndex = 89;
             this.characterIdLabel.Text = "Character ID:";
-            // 
-            // characterStrengthLabel
-            // 
-            this.characterStrengthLabel.AutoSize = true;
-            this.characterStrengthLabel.Location = new System.Drawing.Point(396, 54);
-            this.characterStrengthLabel.Name = "characterStrengthLabel";
-            this.characterStrengthLabel.Size = new System.Drawing.Size(50, 13);
-            this.characterStrengthLabel.TabIndex = 88;
-            this.characterStrengthLabel.Text = "Strength:";
             // 
             // characterXpLabel
             // 
@@ -394,18 +248,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(832, 450);
-            this.Controls.Add(this.characterUpdateButton);
             this.Controls.Add(this.characterCreateButton);
             this.Controls.Add(this.characterSearchLabel);
-            this.Controls.Add(this.characterSearchButton);
             this.Controls.Add(this.characterSearchTextBox);
-            this.Controls.Add(this.characterConstitutionLabel);
-            this.Controls.Add(this.characterConstitutionTextBox);
-            this.Controls.Add(this.characterCharismaTextBox);
-            this.Controls.Add(this.characterWisdomTextBox);
-            this.Controls.Add(this.characterDexterityTextBox);
-            this.Controls.Add(this.characterIntelligenceTextBox);
-            this.Controls.Add(this.characterStrengthTextBox);
             this.Controls.Add(this.characterBackgroundLabel);
             this.Controls.Add(this.characterXpTextBox);
             this.Controls.Add(this.characterLvlTextBox);
@@ -417,15 +262,8 @@
             this.Controls.Add(this.characterManaTextBox);
             this.Controls.Add(this.characterLifeTextBox);
             this.Controls.Add(this.characterIdTextBox);
-            this.Controls.Add(this.characterDeleteButton);
             this.Controls.Add(this.characterBackgroundRichTextBox);
-            this.Controls.Add(this.characterWisdomLabel);
-            this.Controls.Add(this.characterCharismaLabel);
-            this.Controls.Add(this.characterIntelligenceLabel);
-            this.Controls.Add(this.characterAttributesLabel);
-            this.Controls.Add(this.characterDexterityLabel);
             this.Controls.Add(this.characterIdLabel);
-            this.Controls.Add(this.characterStrengthLabel);
             this.Controls.Add(this.characterXpLabel);
             this.Controls.Add(this.characterHeightLabel);
             this.Controls.Add(this.characterWeightLabel);
@@ -435,6 +273,7 @@
             this.Controls.Add(this.characterImagePictureBox);
             this.Name = "CriaçãoPersonagem";
             this.Text = "CriaçãoPersonagem";
+            this.Load += new System.EventHandler(this.CriaçãoPersonagem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.characterImagePictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -442,19 +281,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button characterUpdateButton;
         private System.Windows.Forms.Button characterCreateButton;
         private System.Windows.Forms.Label characterSearchLabel;
-        private System.Windows.Forms.Button characterSearchButton;
         private System.Windows.Forms.TextBox characterSearchTextBox;
-        private System.Windows.Forms.Label characterConstitutionLabel;
-        private System.Windows.Forms.TextBox characterConstitutionTextBox;
-        private System.Windows.Forms.TextBox characterCharismaTextBox;
-        private System.Windows.Forms.TextBox characterWisdomTextBox;
-        private System.Windows.Forms.TextBox characterDexterityTextBox;
-        private System.Windows.Forms.TextBox characterIntelligenceTextBox;
-        private System.Windows.Forms.TextBox characterStrengthTextBox;
         private System.Windows.Forms.Label characterBackgroundLabel;
         private System.Windows.Forms.TextBox characterXpTextBox;
         private System.Windows.Forms.TextBox characterLvlTextBox;
@@ -466,15 +295,8 @@
         private System.Windows.Forms.TextBox characterManaTextBox;
         private System.Windows.Forms.TextBox characterLifeTextBox;
         private System.Windows.Forms.TextBox characterIdTextBox;
-        private System.Windows.Forms.Button characterDeleteButton;
         private System.Windows.Forms.RichTextBox characterBackgroundRichTextBox;
-        private System.Windows.Forms.Label characterWisdomLabel;
-        private System.Windows.Forms.Label characterCharismaLabel;
-        private System.Windows.Forms.Label characterIntelligenceLabel;
-        private System.Windows.Forms.Label characterAttributesLabel;
-        private System.Windows.Forms.Label characterDexterityLabel;
         private System.Windows.Forms.Label characterIdLabel;
-        private System.Windows.Forms.Label characterStrengthLabel;
         private System.Windows.Forms.Label characterXpLabel;
         private System.Windows.Forms.Label characterHeightLabel;
         private System.Windows.Forms.Label characterWeightLabel;
