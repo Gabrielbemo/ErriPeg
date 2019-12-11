@@ -39,9 +39,10 @@
             // 
             // createSessionButton
             // 
+            this.createSessionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.createSessionButton.Location = new System.Drawing.Point(75, 291);
             this.createSessionButton.Name = "createSessionButton";
-            this.createSessionButton.Size = new System.Drawing.Size(100, 23);
+            this.createSessionButton.Size = new System.Drawing.Size(100, 38);
             this.createSessionButton.TabIndex = 9;
             this.createSessionButton.Text = "Create Session";
             this.createSessionButton.UseVisualStyleBackColor = true;
@@ -95,9 +96,10 @@
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(12, 377);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(75, 30);
             this.button1.TabIndex = 14;
             this.button1.Text = "Voltar";
             this.button1.UseVisualStyleBackColor = true;
