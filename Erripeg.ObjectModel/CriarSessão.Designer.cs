@@ -49,17 +49,18 @@
             // 
             // sessionNameTextBox
             // 
-            this.sessionNameTextBox.Location = new System.Drawing.Point(75, 89);
+            this.sessionNameTextBox.Location = new System.Drawing.Point(58, 86);
             this.sessionNameTextBox.Name = "sessionNameTextBox";
-            this.sessionNameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.sessionNameTextBox.Size = new System.Drawing.Size(131, 20);
             this.sessionNameTextBox.TabIndex = 6;
             // 
             // createSessionLabel
             // 
             this.createSessionLabel.AutoSize = true;
-            this.createSessionLabel.Location = new System.Drawing.Point(72, 73);
+            this.createSessionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createSessionLabel.Location = new System.Drawing.Point(54, 59);
             this.createSessionLabel.Name = "createSessionLabel";
-            this.createSessionLabel.Size = new System.Drawing.Size(76, 13);
+            this.createSessionLabel.Size = new System.Drawing.Size(135, 24);
             this.createSessionLabel.TabIndex = 5;
             this.createSessionLabel.Text = "Session name:";
             // 
@@ -74,18 +75,20 @@
             // sessionStoryLabel
             // 
             this.sessionStoryLabel.AutoSize = true;
-            this.sessionStoryLabel.Location = new System.Drawing.Point(196, 70);
+            this.sessionStoryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sessionStoryLabel.Location = new System.Drawing.Point(195, 59);
             this.sessionStoryLabel.Name = "sessionStoryLabel";
-            this.sessionStoryLabel.Size = new System.Drawing.Size(74, 13);
+            this.sessionStoryLabel.Size = new System.Drawing.Size(129, 24);
             this.sessionStoryLabel.TabIndex = 11;
             this.sessionStoryLabel.Text = "Session Story:";
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(89, 191);
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(58, 180);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(86, 17);
+            this.checkBox1.Size = new System.Drawing.Size(135, 28);
             this.checkBox1.TabIndex = 13;
             this.checkBox1.Text = "Sou Mestre?";
             this.checkBox1.UseVisualStyleBackColor = true;

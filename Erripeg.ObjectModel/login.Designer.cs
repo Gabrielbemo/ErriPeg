@@ -58,9 +58,10 @@
             // 
             // buttonCadastro
             // 
-            this.buttonCadastro.Location = new System.Drawing.Point(108, 304);
+            this.buttonCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCadastro.Location = new System.Drawing.Point(83, 290);
             this.buttonCadastro.Name = "buttonCadastro";
-            this.buttonCadastro.Size = new System.Drawing.Size(61, 23);
+            this.buttonCadastro.Size = new System.Drawing.Size(112, 45);
             this.buttonCadastro.TabIndex = 2;
             this.buttonCadastro.Text = "Cadastrar";
             this.buttonCadastro.UseVisualStyleBackColor = true;
@@ -68,9 +69,10 @@
             // 
             // buttonLogin
             // 
-            this.buttonLogin.Location = new System.Drawing.Point(108, 258);
+            this.buttonLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogin.Location = new System.Drawing.Point(83, 244);
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(61, 23);
+            this.buttonLogin.Size = new System.Drawing.Size(112, 40);
             this.buttonLogin.TabIndex = 3;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = true;

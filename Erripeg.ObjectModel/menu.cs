@@ -62,5 +62,10 @@ namespace Erripeg.ObjectModel
         {
             label4.Text = (Int32.Parse(label4.Text) + Int32.Parse(textBox3.Text)).ToString();
         }
+
+        private void menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

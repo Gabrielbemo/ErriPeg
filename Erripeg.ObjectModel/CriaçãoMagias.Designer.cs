@@ -43,9 +43,10 @@
             // 
             // createSpellButton
             // 
-            this.createSpellButton.Location = new System.Drawing.Point(79, 369);
+            this.createSpellButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createSpellButton.Location = new System.Drawing.Point(72, 358);
             this.createSpellButton.Name = "createSpellButton";
-            this.createSpellButton.Size = new System.Drawing.Size(76, 21);
+            this.createSpellButton.Size = new System.Drawing.Size(76, 34);
             this.createSpellButton.TabIndex = 21;
             this.createSpellButton.Text = "Create spell";
             this.createSpellButton.UseVisualStyleBackColor = true;
@@ -54,9 +55,10 @@
             // spellCooldownPrefixLabel
             // 
             this.spellCooldownPrefixLabel.AutoSize = true;
-            this.spellCooldownPrefixLabel.Location = new System.Drawing.Point(63, 291);
+            this.spellCooldownPrefixLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spellCooldownPrefixLabel.Location = new System.Drawing.Point(29, 280);
             this.spellCooldownPrefixLabel.Name = "spellCooldownPrefixLabel";
-            this.spellCooldownPrefixLabel.Size = new System.Drawing.Size(110, 13);
+            this.spellCooldownPrefixLabel.Size = new System.Drawing.Size(196, 24);
             this.spellCooldownPrefixLabel.TabIndex = 20;
             this.spellCooldownPrefixLabel.Text = "Spell cooldown prefix:";
             // 
@@ -70,9 +72,10 @@
             // spellCooldownLabel
             // 
             this.spellCooldownLabel.AutoSize = true;
-            this.spellCooldownLabel.Location = new System.Drawing.Point(63, 230);
+            this.spellCooldownLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spellCooldownLabel.Location = new System.Drawing.Point(42, 219);
             this.spellCooldownLabel.Name = "spellCooldownLabel";
-            this.spellCooldownLabel.Size = new System.Drawing.Size(82, 13);
+            this.spellCooldownLabel.Size = new System.Drawing.Size(145, 24);
             this.spellCooldownLabel.TabIndex = 18;
             this.spellCooldownLabel.Text = "Spell cooldown:";
             // 
@@ -86,9 +89,10 @@
             // spellCostLabel
             // 
             this.spellCostLabel.AutoSize = true;
-            this.spellCostLabel.Location = new System.Drawing.Point(63, 169);
+            this.spellCostLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spellCostLabel.Location = new System.Drawing.Point(68, 158);
             this.spellCostLabel.Name = "spellCostLabel";
-            this.spellCostLabel.Size = new System.Drawing.Size(56, 13);
+            this.spellCostLabel.Size = new System.Drawing.Size(96, 24);
             this.spellCostLabel.TabIndex = 16;
             this.spellCostLabel.Text = "Spell cost:";
             // 
@@ -102,9 +106,10 @@
             // spellDamageLabel
             // 
             this.spellDamageLabel.AutoSize = true;
-            this.spellDamageLabel.Location = new System.Drawing.Point(63, 112);
+            this.spellDamageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spellDamageLabel.Location = new System.Drawing.Point(56, 101);
             this.spellDamageLabel.Name = "spellDamageLabel";
-            this.spellDamageLabel.Size = new System.Drawing.Size(74, 13);
+            this.spellDamageLabel.Size = new System.Drawing.Size(131, 24);
             this.spellDamageLabel.TabIndex = 14;
             this.spellDamageLabel.Text = "Spell damage:";
             // 
@@ -125,9 +130,10 @@
             // spellNameLabel
             // 
             this.spellNameLabel.AutoSize = true;
-            this.spellNameLabel.Location = new System.Drawing.Point(63, 61);
+            this.spellNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spellNameLabel.Location = new System.Drawing.Point(56, 50);
             this.spellNameLabel.Name = "spellNameLabel";
-            this.spellNameLabel.Size = new System.Drawing.Size(62, 13);
+            this.spellNameLabel.Size = new System.Drawing.Size(110, 24);
             this.spellNameLabel.TabIndex = 11;
             this.spellNameLabel.Text = "Spell name:";
             // 

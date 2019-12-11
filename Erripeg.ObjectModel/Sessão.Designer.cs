@@ -77,57 +77,58 @@
             // characterConstitutionLabel
             // 
             this.characterConstitutionLabel.AutoSize = true;
-            this.characterConstitutionLabel.Location = new System.Drawing.Point(403, 270);
+            this.characterConstitutionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterConstitutionLabel.Location = new System.Drawing.Point(403, 325);
             this.characterConstitutionLabel.Name = "characterConstitutionLabel";
-            this.characterConstitutionLabel.Size = new System.Drawing.Size(65, 13);
+            this.characterConstitutionLabel.Size = new System.Drawing.Size(112, 24);
             this.characterConstitutionLabel.TabIndex = 149;
             this.characterConstitutionLabel.Text = "Constitution:";
             // 
             // characterConstitutionTextBox
             // 
-            this.characterConstitutionTextBox.Location = new System.Drawing.Point(406, 286);
+            this.characterConstitutionTextBox.Location = new System.Drawing.Point(406, 352);
             this.characterConstitutionTextBox.Name = "characterConstitutionTextBox";
             this.characterConstitutionTextBox.Size = new System.Drawing.Size(100, 20);
             this.characterConstitutionTextBox.TabIndex = 148;
             // 
             // characterCharismaTextBox
             // 
-            this.characterCharismaTextBox.Location = new System.Drawing.Point(406, 244);
+            this.characterCharismaTextBox.Location = new System.Drawing.Point(407, 301);
             this.characterCharismaTextBox.Name = "characterCharismaTextBox";
             this.characterCharismaTextBox.Size = new System.Drawing.Size(100, 20);
             this.characterCharismaTextBox.TabIndex = 147;
             // 
             // characterWisdomTextBox
             // 
-            this.characterWisdomTextBox.Location = new System.Drawing.Point(406, 205);
+            this.characterWisdomTextBox.Location = new System.Drawing.Point(406, 244);
             this.characterWisdomTextBox.Name = "characterWisdomTextBox";
             this.characterWisdomTextBox.Size = new System.Drawing.Size(100, 20);
             this.characterWisdomTextBox.TabIndex = 146;
             // 
             // characterDexterityTextBox
             // 
-            this.characterDexterityTextBox.Location = new System.Drawing.Point(406, 167);
+            this.characterDexterityTextBox.Location = new System.Drawing.Point(406, 195);
             this.characterDexterityTextBox.Name = "characterDexterityTextBox";
             this.characterDexterityTextBox.Size = new System.Drawing.Size(100, 20);
             this.characterDexterityTextBox.TabIndex = 145;
             // 
             // characterIntelligenceTextBox
             // 
-            this.characterIntelligenceTextBox.Location = new System.Drawing.Point(406, 122);
+            this.characterIntelligenceTextBox.Location = new System.Drawing.Point(406, 144);
             this.characterIntelligenceTextBox.Name = "characterIntelligenceTextBox";
             this.characterIntelligenceTextBox.Size = new System.Drawing.Size(100, 20);
             this.characterIntelligenceTextBox.TabIndex = 144;
             // 
             // characterStrengthTextBox
             // 
-            this.characterStrengthTextBox.Location = new System.Drawing.Point(406, 75);
+            this.characterStrengthTextBox.Location = new System.Drawing.Point(406, 94);
             this.characterStrengthTextBox.Name = "characterStrengthTextBox";
             this.characterStrengthTextBox.Size = new System.Drawing.Size(100, 20);
             this.characterStrengthTextBox.TabIndex = 143;
             // 
             // characterXpTextBox
             // 
-            this.characterXpTextBox.Location = new System.Drawing.Point(258, 286);
+            this.characterXpTextBox.Location = new System.Drawing.Point(258, 352);
             this.characterXpTextBox.Name = "characterXpTextBox";
             this.characterXpTextBox.Size = new System.Drawing.Size(100, 20);
             this.characterXpTextBox.TabIndex = 142;
@@ -142,9 +143,10 @@
             // characterLvlLabel
             // 
             this.characterLvlLabel.AutoSize = true;
-            this.characterLvlLabel.Location = new System.Drawing.Point(132, 44);
+            this.characterLvlLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterLvlLabel.Location = new System.Drawing.Point(131, 33);
             this.characterLvlLabel.Name = "characterLvlLabel";
-            this.characterLvlLabel.Size = new System.Drawing.Size(29, 13);
+            this.characterLvlLabel.Size = new System.Drawing.Size(48, 24);
             this.characterLvlLabel.TabIndex = 140;
             this.characterLvlLabel.Text = "LVL:";
             // 
@@ -157,14 +159,14 @@
             // 
             // characterHeightTextBox
             // 
-            this.characterHeightTextBox.Location = new System.Drawing.Point(258, 244);
+            this.characterHeightTextBox.Location = new System.Drawing.Point(258, 301);
             this.characterHeightTextBox.Name = "characterHeightTextBox";
             this.characterHeightTextBox.Size = new System.Drawing.Size(100, 20);
             this.characterHeightTextBox.TabIndex = 138;
             // 
             // characterWeightTextBox
             // 
-            this.characterWeightTextBox.Location = new System.Drawing.Point(258, 206);
+            this.characterWeightTextBox.Location = new System.Drawing.Point(258, 244);
             this.characterWeightTextBox.Name = "characterWeightTextBox";
             this.characterWeightTextBox.Size = new System.Drawing.Size(100, 20);
             this.characterWeightTextBox.TabIndex = 137;
@@ -172,29 +174,30 @@
             // characterInfoLabel
             // 
             this.characterInfoLabel.AutoSize = true;
-            this.characterInfoLabel.Location = new System.Drawing.Point(255, 33);
+            this.characterInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterInfoLabel.Location = new System.Drawing.Point(208, 33);
             this.characterInfoLabel.Name = "characterInfoLabel";
-            this.characterInfoLabel.Size = new System.Drawing.Size(108, 13);
+            this.characterInfoLabel.Size = new System.Drawing.Size(188, 24);
             this.characterInfoLabel.TabIndex = 136;
             this.characterInfoLabel.Text = "Character Information";
             // 
             // characterManaTextBox
             // 
-            this.characterManaTextBox.Location = new System.Drawing.Point(258, 167);
+            this.characterManaTextBox.Location = new System.Drawing.Point(259, 194);
             this.characterManaTextBox.Name = "characterManaTextBox";
             this.characterManaTextBox.Size = new System.Drawing.Size(100, 20);
             this.characterManaTextBox.TabIndex = 135;
             // 
             // characterLifeTextBox
             // 
-            this.characterLifeTextBox.Location = new System.Drawing.Point(258, 122);
+            this.characterLifeTextBox.Location = new System.Drawing.Point(258, 144);
             this.characterLifeTextBox.Name = "characterLifeTextBox";
             this.characterLifeTextBox.Size = new System.Drawing.Size(100, 20);
             this.characterLifeTextBox.TabIndex = 134;
             // 
             // characterIdTextBox
             // 
-            this.characterIdTextBox.Location = new System.Drawing.Point(258, 75);
+            this.characterIdTextBox.Location = new System.Drawing.Point(259, 94);
             this.characterIdTextBox.Name = "characterIdTextBox";
             this.characterIdTextBox.Size = new System.Drawing.Size(100, 20);
             this.characterIdTextBox.TabIndex = 133;
@@ -202,117 +205,130 @@
             // characterWisdomLabel
             // 
             this.characterWisdomLabel.AutoSize = true;
-            this.characterWisdomLabel.Location = new System.Drawing.Point(403, 190);
+            this.characterWisdomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterWisdomLabel.Location = new System.Drawing.Point(402, 217);
             this.characterWisdomLabel.Name = "characterWisdomLabel";
-            this.characterWisdomLabel.Size = new System.Drawing.Size(48, 13);
+            this.characterWisdomLabel.Size = new System.Drawing.Size(84, 24);
             this.characterWisdomLabel.TabIndex = 132;
             this.characterWisdomLabel.Text = "Wisdom:";
             // 
             // characterCharismaLabel
             // 
             this.characterCharismaLabel.AutoSize = true;
-            this.characterCharismaLabel.Location = new System.Drawing.Point(403, 228);
+            this.characterCharismaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterCharismaLabel.Location = new System.Drawing.Point(403, 274);
             this.characterCharismaLabel.Name = "characterCharismaLabel";
-            this.characterCharismaLabel.Size = new System.Drawing.Size(53, 13);
+            this.characterCharismaLabel.Size = new System.Drawing.Size(94, 24);
             this.characterCharismaLabel.TabIndex = 131;
             this.characterCharismaLabel.Text = "Charisma:";
             // 
             // characterIntelligenceLabel
             // 
             this.characterIntelligenceLabel.AutoSize = true;
-            this.characterIntelligenceLabel.Location = new System.Drawing.Point(403, 106);
+            this.characterIntelligenceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterIntelligenceLabel.Location = new System.Drawing.Point(403, 117);
             this.characterIntelligenceLabel.Name = "characterIntelligenceLabel";
-            this.characterIntelligenceLabel.Size = new System.Drawing.Size(64, 13);
+            this.characterIntelligenceLabel.Size = new System.Drawing.Size(111, 24);
             this.characterIntelligenceLabel.TabIndex = 130;
             this.characterIntelligenceLabel.Text = "Intelligence:";
             // 
             // characterAttributesLabel
             // 
             this.characterAttributesLabel.AutoSize = true;
-            this.characterAttributesLabel.Location = new System.Drawing.Point(403, 33);
+            this.characterAttributesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterAttributesLabel.Location = new System.Drawing.Point(402, 33);
             this.characterAttributesLabel.Name = "characterAttributesLabel";
-            this.characterAttributesLabel.Size = new System.Drawing.Size(100, 13);
+            this.characterAttributesLabel.Size = new System.Drawing.Size(173, 24);
             this.characterAttributesLabel.TabIndex = 129;
             this.characterAttributesLabel.Text = "Character Attributes";
             // 
             // characterDexterityLabel
             // 
             this.characterDexterityLabel.AutoSize = true;
-            this.characterDexterityLabel.Location = new System.Drawing.Point(403, 151);
+            this.characterDexterityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterDexterityLabel.Location = new System.Drawing.Point(403, 167);
             this.characterDexterityLabel.Name = "characterDexterityLabel";
-            this.characterDexterityLabel.Size = new System.Drawing.Size(51, 13);
+            this.characterDexterityLabel.Size = new System.Drawing.Size(87, 24);
             this.characterDexterityLabel.TabIndex = 128;
             this.characterDexterityLabel.Text = "Dexterity:";
             // 
             // characterIdLabel
             // 
             this.characterIdLabel.AutoSize = true;
-            this.characterIdLabel.Location = new System.Drawing.Point(255, 59);
+            this.characterIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterIdLabel.Location = new System.Drawing.Point(255, 67);
             this.characterIdLabel.Name = "characterIdLabel";
-            this.characterIdLabel.Size = new System.Drawing.Size(70, 13);
+            this.characterIdLabel.Size = new System.Drawing.Size(118, 24);
             this.characterIdLabel.TabIndex = 127;
             this.characterIdLabel.Text = "Character ID:";
             // 
             // characterStrengthLabel
             // 
             this.characterStrengthLabel.AutoSize = true;
-            this.characterStrengthLabel.Location = new System.Drawing.Point(403, 59);
+            this.characterStrengthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterStrengthLabel.Location = new System.Drawing.Point(405, 67);
             this.characterStrengthLabel.Name = "characterStrengthLabel";
-            this.characterStrengthLabel.Size = new System.Drawing.Size(50, 13);
+            this.characterStrengthLabel.Size = new System.Drawing.Size(85, 24);
             this.characterStrengthLabel.TabIndex = 126;
             this.characterStrengthLabel.Text = "Strength:";
             // 
             // characterXpLabel
             // 
             this.characterXpLabel.AutoSize = true;
-            this.characterXpLabel.Location = new System.Drawing.Point(258, 267);
+            this.characterXpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterXpLabel.Location = new System.Drawing.Point(255, 325);
             this.characterXpLabel.Name = "characterXpLabel";
-            this.characterXpLabel.Size = new System.Drawing.Size(24, 13);
+            this.characterXpLabel.Size = new System.Drawing.Size(41, 24);
             this.characterXpLabel.TabIndex = 125;
             this.characterXpLabel.Text = "XP:";
             // 
             // characterHeightLabel
             // 
             this.characterHeightLabel.AutoSize = true;
-            this.characterHeightLabel.Location = new System.Drawing.Point(255, 228);
+            this.characterHeightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterHeightLabel.Location = new System.Drawing.Point(254, 274);
             this.characterHeightLabel.Name = "characterHeightLabel";
-            this.characterHeightLabel.Size = new System.Drawing.Size(41, 13);
+            this.characterHeightLabel.Size = new System.Drawing.Size(70, 24);
             this.characterHeightLabel.TabIndex = 124;
             this.characterHeightLabel.Text = "Height:";
             // 
             // characterWeightLabel
             // 
             this.characterWeightLabel.AutoSize = true;
-            this.characterWeightLabel.Location = new System.Drawing.Point(255, 190);
+            this.characterWeightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterWeightLabel.Location = new System.Drawing.Point(254, 217);
             this.characterWeightLabel.Name = "characterWeightLabel";
-            this.characterWeightLabel.Size = new System.Drawing.Size(44, 13);
+            this.characterWeightLabel.Size = new System.Drawing.Size(74, 24);
             this.characterWeightLabel.TabIndex = 123;
             this.characterWeightLabel.Text = "Weight:";
             // 
             // characterManaLabel
             // 
             this.characterManaLabel.AutoSize = true;
-            this.characterManaLabel.Location = new System.Drawing.Point(255, 151);
+            this.characterManaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterManaLabel.Location = new System.Drawing.Point(255, 167);
             this.characterManaLabel.Name = "characterManaLabel";
-            this.characterManaLabel.Size = new System.Drawing.Size(37, 13);
+            this.characterManaLabel.Size = new System.Drawing.Size(62, 24);
             this.characterManaLabel.TabIndex = 122;
             this.characterManaLabel.Text = "Mana:";
             // 
             // characterLifeLabel
             // 
             this.characterLifeLabel.AutoSize = true;
-            this.characterLifeLabel.Location = new System.Drawing.Point(255, 106);
+            this.characterLifeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterLifeLabel.Location = new System.Drawing.Point(255, 117);
             this.characterLifeLabel.Name = "characterLifeLabel";
-            this.characterLifeLabel.Size = new System.Drawing.Size(27, 13);
+            this.characterLifeLabel.Size = new System.Drawing.Size(44, 24);
             this.characterLifeLabel.TabIndex = 121;
             this.characterLifeLabel.Text = "Life:";
             // 
             // characterNameLabel
             // 
             this.characterNameLabel.AutoSize = true;
-            this.characterNameLabel.Location = new System.Drawing.Point(25, 44);
+            this.characterNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterNameLabel.Location = new System.Drawing.Point(21, 33);
             this.characterNameLabel.Name = "characterNameLabel";
-            this.characterNameLabel.Size = new System.Drawing.Size(38, 13);
+            this.characterNameLabel.Size = new System.Drawing.Size(66, 24);
             this.characterNameLabel.TabIndex = 120;
             this.characterNameLabel.Text = "Name:";
             // 
@@ -327,9 +343,10 @@
             // sessionActionLogLabel
             // 
             this.sessionActionLogLabel.AutoSize = true;
-            this.sessionActionLogLabel.Location = new System.Drawing.Point(543, 33);
+            this.sessionActionLogLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sessionActionLogLabel.Location = new System.Drawing.Point(582, 33);
             this.sessionActionLogLabel.Name = "sessionActionLogLabel";
-            this.sessionActionLogLabel.Size = new System.Drawing.Size(61, 13);
+            this.sessionActionLogLabel.Size = new System.Drawing.Size(105, 24);
             this.sessionActionLogLabel.TabIndex = 118;
             this.sessionActionLogLabel.Text = "Action Log:";
             // 

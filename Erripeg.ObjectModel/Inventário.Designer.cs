@@ -39,18 +39,20 @@
             // 
             // inventoryUserItemButton
             // 
-            this.inventoryUserItemButton.Location = new System.Drawing.Point(121, 412);
+            this.inventoryUserItemButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inventoryUserItemButton.Location = new System.Drawing.Point(146, 415);
             this.inventoryUserItemButton.Name = "inventoryUserItemButton";
-            this.inventoryUserItemButton.Size = new System.Drawing.Size(75, 23);
+            this.inventoryUserItemButton.Size = new System.Drawing.Size(75, 33);
             this.inventoryUserItemButton.TabIndex = 13;
             this.inventoryUserItemButton.Text = "Use item";
             this.inventoryUserItemButton.UseVisualStyleBackColor = true;
             // 
             // inventoryDropItemTextBox
             // 
-            this.inventoryDropItemTextBox.Location = new System.Drawing.Point(32, 412);
+            this.inventoryDropItemTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inventoryDropItemTextBox.Location = new System.Drawing.Point(32, 415);
             this.inventoryDropItemTextBox.Name = "inventoryDropItemTextBox";
-            this.inventoryDropItemTextBox.Size = new System.Drawing.Size(75, 23);
+            this.inventoryDropItemTextBox.Size = new System.Drawing.Size(75, 33);
             this.inventoryDropItemTextBox.TabIndex = 12;
             this.inventoryDropItemTextBox.Text = "Drop item";
             this.inventoryDropItemTextBox.UseVisualStyleBackColor = true;
@@ -70,7 +72,7 @@
             // 
             // inventorySizeTextBox
             // 
-            this.inventorySizeTextBox.Location = new System.Drawing.Point(277, 16);
+            this.inventorySizeTextBox.Location = new System.Drawing.Point(366, 21);
             this.inventorySizeTextBox.Name = "inventorySizeTextBox";
             this.inventorySizeTextBox.Size = new System.Drawing.Size(100, 20);
             this.inventorySizeTextBox.TabIndex = 10;
@@ -78,15 +80,16 @@
             // inventorySizeLabel
             // 
             this.inventorySizeLabel.AutoSize = true;
-            this.inventorySizeLabel.Location = new System.Drawing.Point(241, 19);
+            this.inventorySizeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inventorySizeLabel.Location = new System.Drawing.Point(318, 16);
             this.inventorySizeLabel.Name = "inventorySizeLabel";
-            this.inventorySizeLabel.Size = new System.Drawing.Size(30, 13);
+            this.inventorySizeLabel.Size = new System.Drawing.Size(51, 24);
             this.inventorySizeLabel.TabIndex = 9;
             this.inventorySizeLabel.Text = "Size:";
             // 
             // inventoryOwnerTextBox
             // 
-            this.inventoryOwnerTextBox.Location = new System.Drawing.Point(121, 16);
+            this.inventoryOwnerTextBox.Location = new System.Drawing.Point(183, 21);
             this.inventoryOwnerTextBox.Name = "inventoryOwnerTextBox";
             this.inventoryOwnerTextBox.Size = new System.Drawing.Size(100, 20);
             this.inventoryOwnerTextBox.TabIndex = 8;
@@ -94,9 +97,10 @@
             // inventoryOwnerLabel
             // 
             this.inventoryOwnerLabel.AutoSize = true;
-            this.inventoryOwnerLabel.Location = new System.Drawing.Point(29, 19);
+            this.inventoryOwnerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inventoryOwnerLabel.Location = new System.Drawing.Point(28, 15);
             this.inventoryOwnerLabel.Name = "inventoryOwnerLabel";
-            this.inventoryOwnerLabel.Size = new System.Drawing.Size(86, 13);
+            this.inventoryOwnerLabel.Size = new System.Drawing.Size(149, 24);
             this.inventoryOwnerLabel.TabIndex = 7;
             this.inventoryOwnerLabel.Text = "Inventory owner:";
             // 

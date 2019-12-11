@@ -39,18 +39,20 @@
             // 
             // characterUpdateButton
             // 
+            this.characterUpdateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.characterUpdateButton.Location = new System.Drawing.Point(358, 371);
             this.characterUpdateButton.Name = "characterUpdateButton";
-            this.characterUpdateButton.Size = new System.Drawing.Size(100, 23);
+            this.characterUpdateButton.Size = new System.Drawing.Size(100, 30);
             this.characterUpdateButton.TabIndex = 90;
             this.characterUpdateButton.Text = "Update spell";
             this.characterUpdateButton.UseVisualStyleBackColor = true;
             // 
             // spellCreateButton
             // 
+            this.spellCreateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.spellCreateButton.Location = new System.Drawing.Point(207, 371);
             this.spellCreateButton.Name = "spellCreateButton";
-            this.spellCreateButton.Size = new System.Drawing.Size(100, 23);
+            this.spellCreateButton.Size = new System.Drawing.Size(100, 30);
             this.spellCreateButton.TabIndex = 89;
             this.spellCreateButton.Text = "Create spell";
             this.spellCreateButton.UseVisualStyleBackColor = true;
@@ -58,9 +60,10 @@
             // 
             // spellDeleteButton
             // 
+            this.spellDeleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.spellDeleteButton.Location = new System.Drawing.Point(207, 407);
             this.spellDeleteButton.Name = "spellDeleteButton";
-            this.spellDeleteButton.Size = new System.Drawing.Size(100, 23);
+            this.spellDeleteButton.Size = new System.Drawing.Size(100, 31);
             this.spellDeleteButton.TabIndex = 87;
             this.spellDeleteButton.Text = "Delete spell";
             this.spellDeleteButton.UseVisualStyleBackColor = true;
@@ -68,9 +71,10 @@
             // spellListLabel
             // 
             this.spellListLabel.AutoSize = true;
-            this.spellListLabel.Location = new System.Drawing.Point(12, 23);
+            this.spellListLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spellListLabel.Location = new System.Drawing.Point(12, 12);
             this.spellListLabel.Name = "spellListLabel";
-            this.spellListLabel.Size = new System.Drawing.Size(49, 13);
+            this.spellListLabel.Size = new System.Drawing.Size(84, 24);
             this.spellListLabel.TabIndex = 86;
             this.spellListLabel.Text = "Spell List";
             // 
@@ -85,9 +89,10 @@
             // 
             // updateTableButton
             // 
+            this.updateTableButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateTableButton.Location = new System.Drawing.Point(358, 407);
             this.updateTableButton.Name = "updateTableButton";
-            this.updateTableButton.Size = new System.Drawing.Size(100, 23);
+            this.updateTableButton.Size = new System.Drawing.Size(100, 31);
             this.updateTableButton.TabIndex = 92;
             this.updateTableButton.Text = "Update Table";
             this.updateTableButton.UseVisualStyleBackColor = true;
