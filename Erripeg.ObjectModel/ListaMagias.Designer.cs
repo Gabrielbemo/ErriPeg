@@ -34,6 +34,7 @@
             this.spellListLabel = new System.Windows.Forms.Label();
             this.selectSpellDataGridView = new System.Windows.Forms.DataGridView();
             this.updateTableButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.selectSpellDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,7 +45,7 @@
             this.characterUpdateButton.Name = "characterUpdateButton";
             this.characterUpdateButton.Size = new System.Drawing.Size(100, 30);
             this.characterUpdateButton.TabIndex = 90;
-            this.characterUpdateButton.Text = "Update spell";
+            this.characterUpdateButton.Text = "Editar";
             this.characterUpdateButton.UseVisualStyleBackColor = true;
             // 
             // spellCreateButton
@@ -54,7 +55,7 @@
             this.spellCreateButton.Name = "spellCreateButton";
             this.spellCreateButton.Size = new System.Drawing.Size(100, 30);
             this.spellCreateButton.TabIndex = 89;
-            this.spellCreateButton.Text = "Create spell";
+            this.spellCreateButton.Text = "Criar";
             this.spellCreateButton.UseVisualStyleBackColor = true;
             this.spellCreateButton.Click += new System.EventHandler(this.spellCreateButton_Click);
             // 
@@ -65,7 +66,7 @@
             this.spellDeleteButton.Name = "spellDeleteButton";
             this.spellDeleteButton.Size = new System.Drawing.Size(100, 31);
             this.spellDeleteButton.TabIndex = 87;
-            this.spellDeleteButton.Text = "Delete spell";
+            this.spellDeleteButton.Text = "Procurar";
             this.spellDeleteButton.UseVisualStyleBackColor = true;
             // 
             // spellListLabel
@@ -74,16 +75,16 @@
             this.spellListLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.spellListLabel.Location = new System.Drawing.Point(12, 12);
             this.spellListLabel.Name = "spellListLabel";
-            this.spellListLabel.Size = new System.Drawing.Size(84, 24);
+            this.spellListLabel.Size = new System.Drawing.Size(139, 24);
             this.spellListLabel.TabIndex = 86;
-            this.spellListLabel.Text = "Spell List";
+            this.spellListLabel.Text = "Lista de magias";
             // 
             // selectSpellDataGridView
             // 
             this.selectSpellDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.selectSpellDataGridView.Location = new System.Drawing.Point(15, 39);
+            this.selectSpellDataGridView.Location = new System.Drawing.Point(15, 48);
             this.selectSpellDataGridView.Name = "selectSpellDataGridView";
-            this.selectSpellDataGridView.Size = new System.Drawing.Size(647, 326);
+            this.selectSpellDataGridView.Size = new System.Drawing.Size(647, 317);
             this.selectSpellDataGridView.TabIndex = 91;
             this.selectSpellDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -94,15 +95,26 @@
             this.updateTableButton.Name = "updateTableButton";
             this.updateTableButton.Size = new System.Drawing.Size(100, 31);
             this.updateTableButton.TabIndex = 92;
-            this.updateTableButton.Text = "Update Table";
+            this.updateTableButton.Text = "Deletar";
             this.updateTableButton.UseVisualStyleBackColor = true;
             this.updateTableButton.Click += new System.EventHandler(this.updateTableButton_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(587, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 30);
+            this.button1.TabIndex = 93;
+            this.button1.Text = "Voltar";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // ListaMagias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(674, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.updateTableButton);
             this.Controls.Add(this.selectSpellDataGridView);
             this.Controls.Add(this.characterUpdateButton);
@@ -125,5 +137,6 @@
         private System.Windows.Forms.Label spellListLabel;
         private System.Windows.Forms.Button updateTableButton;
         public System.Windows.Forms.DataGridView selectSpellDataGridView;
+        private System.Windows.Forms.Button button1;
     }
 }

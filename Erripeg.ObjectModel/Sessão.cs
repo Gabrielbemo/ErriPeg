@@ -16,5 +16,10 @@ namespace Erripeg.ObjectModel
         {
             InitializeComponent();
         }
+
+        private void characterLvlLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -54,25 +54,28 @@
             this.creatureLifeLabel = new System.Windows.Forms.Label();
             this.creatureNameLabel = new System.Windows.Forms.Label();
             this.creatureImagePictureBox = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.creatureImagePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // creatureUpdateButton
             // 
-            this.creatureUpdateButton.Location = new System.Drawing.Point(398, 391);
+            this.creatureUpdateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.creatureUpdateButton.Location = new System.Drawing.Point(398, 373);
             this.creatureUpdateButton.Name = "creatureUpdateButton";
-            this.creatureUpdateButton.Size = new System.Drawing.Size(100, 23);
+            this.creatureUpdateButton.Size = new System.Drawing.Size(100, 29);
             this.creatureUpdateButton.TabIndex = 80;
-            this.creatureUpdateButton.Text = "Update creature";
+            this.creatureUpdateButton.Text = "Editar";
             this.creatureUpdateButton.UseVisualStyleBackColor = true;
             // 
             // creatureCreateButton
             // 
-            this.creatureCreateButton.Location = new System.Drawing.Point(398, 355);
+            this.creatureCreateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.creatureCreateButton.Location = new System.Drawing.Point(398, 338);
             this.creatureCreateButton.Name = "creatureCreateButton";
-            this.creatureCreateButton.Size = new System.Drawing.Size(100, 23);
+            this.creatureCreateButton.Size = new System.Drawing.Size(100, 29);
             this.creatureCreateButton.TabIndex = 79;
-            this.creatureCreateButton.Text = "Create creature";
+            this.creatureCreateButton.Text = "Criar";
             this.creatureCreateButton.UseVisualStyleBackColor = true;
             this.creatureCreateButton.Click += new System.EventHandler(this.CreatureCreateButton_Click);
             // 
@@ -80,25 +83,26 @@
             // 
             this.creatureSearchLabel.AutoSize = true;
             this.creatureSearchLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.creatureSearchLabel.Location = new System.Drawing.Point(249, 302);
+            this.creatureSearchLabel.Location = new System.Drawing.Point(249, 285);
             this.creatureSearchLabel.Name = "creatureSearchLabel";
-            this.creatureSearchLabel.Size = new System.Drawing.Size(194, 24);
+            this.creatureSearchLabel.Size = new System.Drawing.Size(206, 24);
             this.creatureSearchLabel.TabIndex = 78;
-            this.creatureSearchLabel.Text = "Search creature by id:";
+            this.creatureSearchLabel.Text = "Procurar criatura por id:";
             // 
             // creatureSearchButton
             // 
-            this.creatureSearchButton.Location = new System.Drawing.Point(250, 355);
+            this.creatureSearchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.creatureSearchButton.Location = new System.Drawing.Point(250, 338);
             this.creatureSearchButton.Name = "creatureSearchButton";
-            this.creatureSearchButton.Size = new System.Drawing.Size(100, 23);
+            this.creatureSearchButton.Size = new System.Drawing.Size(100, 29);
             this.creatureSearchButton.TabIndex = 77;
-            this.creatureSearchButton.Text = "Search creature";
+            this.creatureSearchButton.Text = "Procurar criatura";
             this.creatureSearchButton.UseVisualStyleBackColor = true;
             this.creatureSearchButton.Click += new System.EventHandler(this.CreatureSearchButton_Click);
             // 
             // c
             // 
-            this.c.Location = new System.Drawing.Point(250, 329);
+            this.c.Location = new System.Drawing.Point(250, 312);
             this.c.Name = "c";
             this.c.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.c.Size = new System.Drawing.Size(248, 20);
@@ -110,9 +114,9 @@
             this.creatureBackgroundLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.creatureBackgroundLabel.Location = new System.Drawing.Point(529, 24);
             this.creatureBackgroundLabel.Name = "creatureBackgroundLabel";
-            this.creatureBackgroundLabel.Size = new System.Drawing.Size(117, 24);
+            this.creatureBackgroundLabel.Size = new System.Drawing.Size(77, 24);
             this.creatureBackgroundLabel.TabIndex = 68;
-            this.creatureBackgroundLabel.Text = "Background:";
+            this.creatureBackgroundLabel.Text = "História:";
             // 
             // creatureXpTextBox
             // 
@@ -134,9 +138,9 @@
             this.creatureLvlLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.creatureLvlLabel.Location = new System.Drawing.Point(123, 29);
             this.creatureLvlLabel.Name = "creatureLvlLabel";
-            this.creatureLvlLabel.Size = new System.Drawing.Size(48, 24);
+            this.creatureLvlLabel.Size = new System.Drawing.Size(57, 24);
             this.creatureLvlLabel.TabIndex = 65;
-            this.creatureLvlLabel.Text = "LVL:";
+            this.creatureLvlLabel.Text = "Nível:";
             // 
             // creatureNameTextBox
             // 
@@ -165,9 +169,9 @@
             this.creatureInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.creatureInfoLabel.Location = new System.Drawing.Point(246, 9);
             this.creatureInfoLabel.Name = "creatureInfoLabel";
-            this.creatureInfoLabel.Size = new System.Drawing.Size(188, 24);
+            this.creatureInfoLabel.Size = new System.Drawing.Size(205, 24);
             this.creatureInfoLabel.TabIndex = 61;
-            this.creatureInfoLabel.Text = "Creature Informations";
+            this.creatureInfoLabel.Text = "Informações da criatura";
             // 
             // creatureManaTextBox
             // 
@@ -192,11 +196,12 @@
             // 
             // creatureDeleteButton
             // 
-            this.creatureDeleteButton.Location = new System.Drawing.Point(250, 391);
+            this.creatureDeleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.creatureDeleteButton.Location = new System.Drawing.Point(250, 373);
             this.creatureDeleteButton.Name = "creatureDeleteButton";
-            this.creatureDeleteButton.Size = new System.Drawing.Size(100, 23);
+            this.creatureDeleteButton.Size = new System.Drawing.Size(100, 29);
             this.creatureDeleteButton.TabIndex = 57;
-            this.creatureDeleteButton.Text = "Delete creature";
+            this.creatureDeleteButton.Text = "Deletar criatura";
             this.creatureDeleteButton.UseVisualStyleBackColor = true;
             this.creatureDeleteButton.Click += new System.EventHandler(this.CreatureDeleteButton_Click);
             // 
@@ -214,9 +219,9 @@
             this.creatureIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.creatureIdLabel.Location = new System.Drawing.Point(246, 35);
             this.creatureIdLabel.Name = "creatureIdLabel";
-            this.creatureIdLabel.Size = new System.Drawing.Size(109, 24);
+            this.creatureIdLabel.Size = new System.Drawing.Size(127, 24);
             this.creatureIdLabel.TabIndex = 50;
-            this.creatureIdLabel.Text = "Creature ID:";
+            this.creatureIdLabel.Text = "ID da Criatura:";
             // 
             // creatureXpLabel
             // 
@@ -234,9 +239,9 @@
             this.creatureHeightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.creatureHeightLabel.Location = new System.Drawing.Point(246, 227);
             this.creatureHeightLabel.Name = "creatureHeightLabel";
-            this.creatureHeightLabel.Size = new System.Drawing.Size(70, 24);
+            this.creatureHeightLabel.Size = new System.Drawing.Size(63, 24);
             this.creatureHeightLabel.TabIndex = 47;
-            this.creatureHeightLabel.Text = "Height:";
+            this.creatureHeightLabel.Text = "Altura:";
             // 
             // creatureWeightLabel
             // 
@@ -244,9 +249,9 @@
             this.creatureWeightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.creatureWeightLabel.Location = new System.Drawing.Point(246, 177);
             this.creatureWeightLabel.Name = "creatureWeightLabel";
-            this.creatureWeightLabel.Size = new System.Drawing.Size(74, 24);
+            this.creatureWeightLabel.Size = new System.Drawing.Size(58, 24);
             this.creatureWeightLabel.TabIndex = 46;
-            this.creatureWeightLabel.Text = "Weight:";
+            this.creatureWeightLabel.Text = "Peso:";
             // 
             // creatureManaLabel
             // 
@@ -264,9 +269,9 @@
             this.creatureLifeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.creatureLifeLabel.Location = new System.Drawing.Point(246, 82);
             this.creatureLifeLabel.Name = "creatureLifeLabel";
-            this.creatureLifeLabel.Size = new System.Drawing.Size(44, 24);
+            this.creatureLifeLabel.Size = new System.Drawing.Size(53, 24);
             this.creatureLifeLabel.TabIndex = 44;
-            this.creatureLifeLabel.Text = "Life:";
+            this.creatureLifeLabel.Text = "Vida:";
             // 
             // creatureNameLabel
             // 
@@ -274,9 +279,9 @@
             this.creatureNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.creatureNameLabel.Location = new System.Drawing.Point(13, 29);
             this.creatureNameLabel.Name = "creatureNameLabel";
-            this.creatureNameLabel.Size = new System.Drawing.Size(66, 24);
+            this.creatureNameLabel.Size = new System.Drawing.Size(67, 24);
             this.creatureNameLabel.TabIndex = 43;
-            this.creatureNameLabel.Text = "Name:";
+            this.creatureNameLabel.Text = "Nome:";
             // 
             // creatureImagePictureBox
             // 
@@ -286,11 +291,22 @@
             this.creatureImagePictureBox.TabIndex = 42;
             this.creatureImagePictureBox.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(744, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 30);
+            this.button1.TabIndex = 81;
+            this.button1.Text = "Voltar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Bestiario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(831, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.creatureUpdateButton);
             this.Controls.Add(this.creatureCreateButton);
             this.Controls.Add(this.creatureSearchLabel);
@@ -354,5 +370,6 @@
         private System.Windows.Forms.Label creatureLifeLabel;
         private System.Windows.Forms.Label creatureNameLabel;
         private System.Windows.Forms.PictureBox creatureImagePictureBox;
+        private System.Windows.Forms.Button button1;
     }
 }

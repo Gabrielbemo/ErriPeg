@@ -49,12 +49,112 @@ namespace Erripeg.ObjectModel
 
         }
 
-        private void CriaçãoPersonagem_Load(object sender, EventArgs e)
+        private void characterCreateButton_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void characterCreateButton_Click(object sender, EventArgs e)
+        private void CriaçãoPersonagem_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void characterLvlLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void characterInfoLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void characterIdLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void characterLifeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void characterIdTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void characterLvlTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void characterNameTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void characterManaTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void characterManaLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void characterNameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void characterWeightLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void characterWeightTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void characterHeightLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void characterHeightTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void characterXpLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void characterXpTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void characterSearchLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void characterSearchTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void characterBackgroundRichTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void characterBackgroundLabel_Click(object sender, EventArgs e)
         {
 
         }
