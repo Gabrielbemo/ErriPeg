@@ -55,15 +55,12 @@
             // 
             // SessionDataGridView
             // 
-            this.selectSessionDataGridView.AllowUserToAddRows = false;
-            this.selectSessionDataGridView.AllowUserToDeleteRows = false;
-            this.selectSessionDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.selectSessionDataGridView.Location = new System.Drawing.Point(12, 25);
-            this.selectSessionDataGridView.Name = "selectSessionDataGridView";
-            this.selectSessionDataGridView.Size = new System.Drawing.Size(776, 314);
-            this.selectSessionDataGridView.TabIndex = 4;
-            this.selectSessionDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SelectSessionDataGridView_CellClick);
-            this.selectSessionDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.selectSessionDataGridView_CellContentClick);
+            this.SessionDataGridView.Location = new System.Drawing.Point(12, 35);
+            this.SessionDataGridView.Name = "SessionDataGridView";
+            this.SessionDataGridView.Size = new System.Drawing.Size(776, 295);
+            this.SessionDataGridView.TabIndex = 0;
+            this.SessionDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SessionDataGridView_CellClick);
+            this.SessionDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SessionDataGridView_CellContentClick);
             // 
             // SelectSession
             // 

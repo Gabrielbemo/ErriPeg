@@ -24,8 +24,8 @@ namespace Erripeg.ObjectModel
             //selectSessionDataGridView.Columns[0].Width = 100;
             
             this.List("select * from section");
-            selectSessionDataGridView.Columns[1].HeaderText = "historia";
-            selectSessionDataGridView.Columns[1].Width = 432;
+            SessionDataGridView.Columns[1].HeaderText = "historia";
+            SessionDataGridView.Columns[1].Width = 432;
         }
         private void ShowSessions()
         {
@@ -33,6 +33,7 @@ namespace Erripeg.ObjectModel
             SqlDataReader reader = con.GetSessions();
             SessionDataGridView.DataSource = reader;
         }
+
         private void CreateSessionButton_Click(object sender, EventArgs e)
         {
             CriarSessão c = new CriarSessão();
@@ -59,8 +60,8 @@ namespace Erripeg.ObjectModel
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable ds = new DataTable();
                 da.Fill(ds);
-                selectSessionDataGridView.DataSource = ds;
-                selectSessionDataGridView.DataMember = da.TableMappings[0].DataSetTable;
+                SessionDataGridView.DataSource = ds;
+                SessionDataGridView.DataMember = da.TableMappings[0].DataSetTable;
 
             }
             catch(Exception ex)
@@ -80,12 +81,30 @@ namespace Erripeg.ObjectModel
             CriaçãoPersonagem d = new CriaçãoPersonagem();
 
             int index = e.RowIndex;
-            DataGridViewRow selectedRow = selectSessionDataGridView.Rows[index];
+            DataGridViewRow selectedRow = SessionDataGridView.Rows[index];
             Usuario.id_sessao = Int32.Parse(selectedRow.Cells[0].Value.ToString());
             Usuario.mestre = Int32.Parse(selectedRow.Cells[2].Value.ToString());
 
             d.Show();
             this.Dispose();
+        }
+
+        private void SessionDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            CriaçãoPersonagem d = new CriaçãoPersonagem();
+
+            int index = e.RowIndex;
+            DataGridViewRow selectedRow = SessionDataGridView.Rows[index];
+            Usuario.id_sessao = Int32.Parse(selectedRow.Cells[0].Value.ToString());
+            Usuario.mestre = Int32.Parse(selectedRow.Cells[2].Value.ToString());
+
+            d.Show();
+            this.Dispose();
+        }
+
+        private void SessionDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
