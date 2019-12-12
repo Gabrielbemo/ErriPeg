@@ -129,7 +129,7 @@
             // 
             // characterXpTextBox
             // 
-            this.characterXpTextBox.Location = new System.Drawing.Point(267, 352);
+            this.characterXpTextBox.Location = new System.Drawing.Point(259, 352);
             this.characterXpTextBox.Name = "characterXpTextBox";
             this.characterXpTextBox.Size = new System.Drawing.Size(100, 20);
             this.characterXpTextBox.TabIndex = 142;

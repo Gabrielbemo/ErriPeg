@@ -37,17 +37,19 @@
             // selectSessionLabel
             // 
             this.selectSessionLabel.AutoSize = true;
+            this.selectSessionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.selectSessionLabel.Location = new System.Drawing.Point(9, 9);
             this.selectSessionLabel.Name = "selectSessionLabel";
-            this.selectSessionLabel.Size = new System.Drawing.Size(80, 13);
+            this.selectSessionLabel.Size = new System.Drawing.Size(139, 24);
             this.selectSessionLabel.TabIndex = 1;
             this.selectSessionLabel.Text = "Select Session:";
             // 
             // createSessionButton
             // 
-            this.createSessionButton.Location = new System.Drawing.Point(342, 345);
+            this.createSessionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createSessionButton.Location = new System.Drawing.Point(302, 346);
             this.createSessionButton.Name = "createSessionButton";
-            this.createSessionButton.Size = new System.Drawing.Size(96, 26);
+            this.createSessionButton.Size = new System.Drawing.Size(169, 36);
             this.createSessionButton.TabIndex = 3;
             this.createSessionButton.Text = "Create Session";
             this.createSessionButton.UseVisualStyleBackColor = true;
