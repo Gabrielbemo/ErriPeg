@@ -91,20 +91,50 @@ namespace Erripeg.ObjectModel
 
         private void SessionDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            CriaçãoPersonagem d = new CriaçãoPersonagem();
-
+            SelecionaPersonagem ss = new SelecionaPersonagem();
             int index = e.RowIndex;
             DataGridViewRow selectedRow = SessionDataGridView.Rows[index];
             Usuario.id_sessao = Int32.Parse(selectedRow.Cells[0].Value.ToString());
             Usuario.mestre = Int32.Parse(selectedRow.Cells[2].Value.ToString());
 
-            d.Show();
+            ss.Show();
             this.Dispose();
         }
 
         private void SessionDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            Login l = new Login();
+            l.Show();
+            this.Dispose();
+        }
+
+        private void SessionDataGridView_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SelecionaPersonagem ss = new SelecionaPersonagem();
+            int index = e.RowIndex;
+            DataGridViewRow selectedRow = SessionDataGridView.Rows[index];
+            Usuario.id_sessao = Int32.Parse(selectedRow.Cells[0].Value.ToString());
+            Usuario.mestre = Int32.Parse(selectedRow.Cells[2].Value.ToString());
+
+            ss.Show();
+            this.Dispose();
+        }
+
+        private void SessionDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+            int index = e.RowIndex;
+            DataGridViewRow selectedRow = SessionDataGridView.Rows[index];
+            Usuario.id_sessao = Int32.Parse(selectedRow.Cells[0].Value.ToString());
+            Usuario.mestre = Int32.Parse(selectedRow.Cells[2].Value.ToString());
+            SelecionaPersonagem sss = new SelecionaPersonagem();
+            sss.Show();
+            this.Dispose();
         }
     }
 }

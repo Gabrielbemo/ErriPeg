@@ -112,6 +112,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelecionaPersonagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelecionaPersonagem.Designer.cs">
+      <DependentUpon>SelecionaPersonagem.cs</DependentUpon>
+    </Compile>
     <Compile Include="SelectSession.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,7 +162,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SelecionaPersonagem.resx">
+      <DependentUpon>SelecionaPersonagem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SelectSession.resx">
       <DependentUpon>SelectSession.cs</DependentUpon>
     </EmbeddedResource>
@@ -193,6 +203,18 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2019-09-08 at 3.20.36 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vector-textured-grunge-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-vector-edit-profile-icon-png-image_758006.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perspective-dice-six-faces-random.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

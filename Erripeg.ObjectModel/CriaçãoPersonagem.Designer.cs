@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CriaçãoPersonagem));
             this.characterCreateButton = new System.Windows.Forms.Button();
             this.characterSearchLabel = new System.Windows.Forms.Label();
             this.characterSearchTextBox = new System.Windows.Forms.TextBox();
@@ -60,9 +59,9 @@
             // 
             this.characterCreateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.characterCreateButton.ForeColor = System.Drawing.Color.Black;
-            this.characterCreateButton.Location = new System.Drawing.Point(321, 398);
+            this.characterCreateButton.Location = new System.Drawing.Point(298, 398);
             this.characterCreateButton.Name = "characterCreateButton";
-            this.characterCreateButton.Size = new System.Drawing.Size(100, 40);
+            this.characterCreateButton.Size = new System.Drawing.Size(171, 40);
             this.characterCreateButton.TabIndex = 118;
             this.characterCreateButton.Text = "Criar";
             this.characterCreateButton.UseVisualStyleBackColor = true;
@@ -304,6 +303,7 @@
             // 
             // characterImagePictureBox
             // 
+            this.characterImagePictureBox.InitialImage = global::Erripeg.ObjectModel.Properties.Resources.pngtree_vector_edit_profile_icon_png_image_758006;
             this.characterImagePictureBox.Location = new System.Drawing.Point(18, 85);
             this.characterImagePictureBox.Name = "characterImagePictureBox";
             this.characterImagePictureBox.Size = new System.Drawing.Size(210, 333);
@@ -325,7 +325,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Erripeg.ObjectModel.Properties.Resources.vector_textured_grunge_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(832, 450);
             this.Controls.Add(this.button1);

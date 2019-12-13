@@ -166,7 +166,7 @@
             this.Vida.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Vida.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Vida.ForeColor = System.Drawing.Color.Black;
-            this.Vida.Location = new System.Drawing.Point(378, 109);
+            this.Vida.Location = new System.Drawing.Point(388, 110);
             this.Vida.Name = "Vida";
             this.Vida.Size = new System.Drawing.Size(103, 47);
             this.Vida.TabIndex = 10;

@@ -14,6 +14,7 @@ namespace ObjectModel
         public static int id_sessao;
         public static int mestre;
 
+        public static double id_cha;
         public static double life;
         public static double mana;
         public static double weight;
