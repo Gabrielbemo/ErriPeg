@@ -72,6 +72,10 @@ namespace Erripeg.ObjectModel
         {
             //SelecionaPersonagem ss = new SelecionaPersonagem();
             int index = e.RowIndex;
+            if(index == -1)
+            {
+                return;
+            }
             DataGridViewRow selectedRow = dataGridView1.Rows[index];
             //ss.Show();
             //this.Dispose();
