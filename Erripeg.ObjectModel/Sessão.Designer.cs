@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sessão));
             this.sessionInventoryButton = new System.Windows.Forms.Button();
             this.characterConstitutionLabel = new System.Windows.Forms.Label();
             this.characterConstitutionTextBox = new System.Windows.Forms.TextBox();
@@ -67,21 +68,25 @@
             // 
             // sessionInventoryButton
             // 
+            this.sessionInventoryButton.BackColor = System.Drawing.SystemColors.Control;
             this.sessionInventoryButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sessionInventoryButton.ForeColor = System.Drawing.Color.Black;
             this.sessionInventoryButton.Location = new System.Drawing.Point(258, 395);
             this.sessionInventoryButton.Name = "sessionInventoryButton";
-            this.sessionInventoryButton.Size = new System.Drawing.Size(100, 43);
+            this.sessionInventoryButton.Size = new System.Drawing.Size(109, 43);
             this.sessionInventoryButton.TabIndex = 150;
             this.sessionInventoryButton.Text = "Inventário";
-            this.sessionInventoryButton.UseVisualStyleBackColor = true;
+            this.sessionInventoryButton.UseVisualStyleBackColor = false;
             // 
             // characterConstitutionLabel
             // 
             this.characterConstitutionLabel.AutoSize = true;
-            this.characterConstitutionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterConstitutionLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.characterConstitutionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterConstitutionLabel.ForeColor = System.Drawing.Color.Black;
             this.characterConstitutionLabel.Location = new System.Drawing.Point(403, 325);
             this.characterConstitutionLabel.Name = "characterConstitutionLabel";
-            this.characterConstitutionLabel.Size = new System.Drawing.Size(117, 24);
+            this.characterConstitutionLabel.Size = new System.Drawing.Size(130, 24);
             this.characterConstitutionLabel.TabIndex = 149;
             this.characterConstitutionLabel.Text = "Constituição:";
             // 
@@ -122,6 +127,7 @@
             // 
             // characterStrengthTextBox
             // 
+            this.characterStrengthTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.characterStrengthTextBox.Location = new System.Drawing.Point(406, 94);
             this.characterStrengthTextBox.Name = "characterStrengthTextBox";
             this.characterStrengthTextBox.Size = new System.Drawing.Size(100, 20);
@@ -129,7 +135,7 @@
             // 
             // characterXpTextBox
             // 
-            this.characterXpTextBox.Location = new System.Drawing.Point(259, 352);
+            this.characterXpTextBox.Location = new System.Drawing.Point(135, 10);
             this.characterXpTextBox.Name = "characterXpTextBox";
             this.characterXpTextBox.Size = new System.Drawing.Size(100, 20);
             this.characterXpTextBox.TabIndex = 142;
@@ -144,10 +150,12 @@
             // characterLvlLabel
             // 
             this.characterLvlLabel.AutoSize = true;
-            this.characterLvlLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterLvlLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.characterLvlLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterLvlLabel.ForeColor = System.Drawing.Color.Black;
             this.characterLvlLabel.Location = new System.Drawing.Point(131, 33);
             this.characterLvlLabel.Name = "characterLvlLabel";
-            this.characterLvlLabel.Size = new System.Drawing.Size(57, 24);
+            this.characterLvlLabel.Size = new System.Drawing.Size(63, 24);
             this.characterLvlLabel.TabIndex = 140;
             this.characterLvlLabel.Text = "Nível:";
             this.characterLvlLabel.Click += new System.EventHandler(this.characterLvlLabel_Click);
@@ -176,10 +184,12 @@
             // characterInfoLabel
             // 
             this.characterInfoLabel.AutoSize = true;
-            this.characterInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterInfoLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.characterInfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterInfoLabel.ForeColor = System.Drawing.Color.Black;
             this.characterInfoLabel.Location = new System.Drawing.Point(254, 33);
             this.characterInfoLabel.Name = "characterInfoLabel";
-            this.characterInfoLabel.Size = new System.Drawing.Size(113, 24);
+            this.characterInfoLabel.Size = new System.Drawing.Size(124, 24);
             this.characterInfoLabel.TabIndex = 136;
             this.characterInfoLabel.Text = "Informações";
             // 
@@ -207,135 +217,162 @@
             // characterWisdomLabel
             // 
             this.characterWisdomLabel.AutoSize = true;
-            this.characterWisdomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterWisdomLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.characterWisdomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterWisdomLabel.ForeColor = System.Drawing.Color.Black;
             this.characterWisdomLabel.Location = new System.Drawing.Point(402, 217);
             this.characterWisdomLabel.Name = "characterWisdomLabel";
-            this.characterWisdomLabel.Size = new System.Drawing.Size(101, 24);
+            this.characterWisdomLabel.Size = new System.Drawing.Size(111, 24);
             this.characterWisdomLabel.TabIndex = 132;
             this.characterWisdomLabel.Text = "Sabedoria:";
             // 
             // characterCharismaLabel
             // 
             this.characterCharismaLabel.AutoSize = true;
-            this.characterCharismaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterCharismaLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.characterCharismaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterCharismaLabel.ForeColor = System.Drawing.Color.Black;
             this.characterCharismaLabel.Location = new System.Drawing.Point(403, 274);
             this.characterCharismaLabel.Name = "characterCharismaLabel";
-            this.characterCharismaLabel.Size = new System.Drawing.Size(83, 24);
+            this.characterCharismaLabel.Size = new System.Drawing.Size(91, 24);
             this.characterCharismaLabel.TabIndex = 131;
             this.characterCharismaLabel.Text = "Carisma:";
             // 
             // characterIntelligenceLabel
             // 
             this.characterIntelligenceLabel.AutoSize = true;
-            this.characterIntelligenceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterIntelligenceLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.characterIntelligenceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterIntelligenceLabel.ForeColor = System.Drawing.Color.Black;
             this.characterIntelligenceLabel.Location = new System.Drawing.Point(403, 117);
             this.characterIntelligenceLabel.Name = "characterIntelligenceLabel";
-            this.characterIntelligenceLabel.Size = new System.Drawing.Size(110, 24);
+            this.characterIntelligenceLabel.Size = new System.Drawing.Size(123, 24);
             this.characterIntelligenceLabel.TabIndex = 130;
             this.characterIntelligenceLabel.Text = "Inteligência:";
             // 
             // characterAttributesLabel
             // 
             this.characterAttributesLabel.AutoSize = true;
-            this.characterAttributesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterAttributesLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.characterAttributesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterAttributesLabel.ForeColor = System.Drawing.Color.Black;
             this.characterAttributesLabel.Location = new System.Drawing.Point(414, 33);
             this.characterAttributesLabel.Name = "characterAttributesLabel";
-            this.characterAttributesLabel.Size = new System.Drawing.Size(83, 24);
+            this.characterAttributesLabel.Size = new System.Drawing.Size(92, 24);
             this.characterAttributesLabel.TabIndex = 129;
             this.characterAttributesLabel.Text = "Atributos";
             // 
             // characterDexterityLabel
             // 
             this.characterDexterityLabel.AutoSize = true;
-            this.characterDexterityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterDexterityLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.characterDexterityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterDexterityLabel.ForeColor = System.Drawing.Color.Black;
             this.characterDexterityLabel.Location = new System.Drawing.Point(403, 167);
             this.characterDexterityLabel.Name = "characterDexterityLabel";
-            this.characterDexterityLabel.Size = new System.Drawing.Size(88, 24);
+            this.characterDexterityLabel.Size = new System.Drawing.Size(97, 24);
             this.characterDexterityLabel.TabIndex = 128;
             this.characterDexterityLabel.Text = "Destreza:";
             // 
             // characterIdLabel
             // 
             this.characterIdLabel.AutoSize = true;
-            this.characterIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterIdLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.characterIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterIdLabel.ForeColor = System.Drawing.Color.Black;
             this.characterIdLabel.Location = new System.Drawing.Point(255, 67);
             this.characterIdLabel.Name = "characterIdLabel";
-            this.characterIdLabel.Size = new System.Drawing.Size(119, 24);
+            this.characterIdLabel.Size = new System.Drawing.Size(133, 24);
             this.characterIdLabel.TabIndex = 127;
             this.characterIdLabel.Text = "Identificação:";
             // 
             // characterStrengthLabel
             // 
             this.characterStrengthLabel.AutoSize = true;
-            this.characterStrengthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterStrengthLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.characterStrengthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterStrengthLabel.ForeColor = System.Drawing.Color.Black;
             this.characterStrengthLabel.Location = new System.Drawing.Point(405, 67);
             this.characterStrengthLabel.Name = "characterStrengthLabel";
-            this.characterStrengthLabel.Size = new System.Drawing.Size(64, 24);
+            this.characterStrengthLabel.Size = new System.Drawing.Size(70, 24);
             this.characterStrengthLabel.TabIndex = 126;
             this.characterStrengthLabel.Text = "Força:";
             // 
             // characterXpLabel
             // 
             this.characterXpLabel.AutoSize = true;
-            this.characterXpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.characterXpLabel.Location = new System.Drawing.Point(255, 325);
+            this.characterXpLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.characterXpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterXpLabel.ForeColor = System.Drawing.Color.Black;
+            this.characterXpLabel.Location = new System.Drawing.Point(1, 6);
             this.characterXpLabel.Name = "characterXpLabel";
-            this.characterXpLabel.Size = new System.Drawing.Size(41, 24);
+            this.characterXpLabel.Size = new System.Drawing.Size(128, 24);
             this.characterXpLabel.TabIndex = 125;
-            this.characterXpLabel.Text = "XP:";
+            this.characterXpLabel.Text = "Experiência:";
             // 
             // characterHeightLabel
             // 
             this.characterHeightLabel.AutoSize = true;
-            this.characterHeightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterHeightLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.characterHeightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterHeightLabel.ForeColor = System.Drawing.Color.Black;
             this.characterHeightLabel.Location = new System.Drawing.Point(254, 274);
             this.characterHeightLabel.Name = "characterHeightLabel";
-            this.characterHeightLabel.Size = new System.Drawing.Size(63, 24);
+            this.characterHeightLabel.Size = new System.Drawing.Size(70, 24);
             this.characterHeightLabel.TabIndex = 124;
             this.characterHeightLabel.Text = "Altura:";
             // 
             // characterWeightLabel
             // 
             this.characterWeightLabel.AutoSize = true;
-            this.characterWeightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterWeightLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.characterWeightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterWeightLabel.ForeColor = System.Drawing.Color.Black;
             this.characterWeightLabel.Location = new System.Drawing.Point(254, 217);
             this.characterWeightLabel.Name = "characterWeightLabel";
-            this.characterWeightLabel.Size = new System.Drawing.Size(58, 24);
+            this.characterWeightLabel.Size = new System.Drawing.Size(63, 24);
             this.characterWeightLabel.TabIndex = 123;
             this.characterWeightLabel.Text = "Peso:";
             // 
             // characterManaLabel
             // 
             this.characterManaLabel.AutoSize = true;
-            this.characterManaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterManaLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.characterManaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterManaLabel.ForeColor = System.Drawing.Color.Black;
             this.characterManaLabel.Location = new System.Drawing.Point(255, 167);
             this.characterManaLabel.Name = "characterManaLabel";
-            this.characterManaLabel.Size = new System.Drawing.Size(62, 24);
+            this.characterManaLabel.Size = new System.Drawing.Size(67, 24);
             this.characterManaLabel.TabIndex = 122;
             this.characterManaLabel.Text = "Mana:";
             // 
             // characterLifeLabel
             // 
             this.characterLifeLabel.AutoSize = true;
-            this.characterLifeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterLifeLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.characterLifeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterLifeLabel.ForeColor = System.Drawing.Color.Black;
             this.characterLifeLabel.Location = new System.Drawing.Point(255, 117);
             this.characterLifeLabel.Name = "characterLifeLabel";
-            this.characterLifeLabel.Size = new System.Drawing.Size(53, 24);
+            this.characterLifeLabel.Size = new System.Drawing.Size(58, 24);
             this.characterLifeLabel.TabIndex = 121;
             this.characterLifeLabel.Text = "Vida:";
             // 
             // characterNameLabel
             // 
             this.characterNameLabel.AutoSize = true;
-            this.characterNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterNameLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.characterNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterNameLabel.ForeColor = System.Drawing.Color.Black;
             this.characterNameLabel.Location = new System.Drawing.Point(21, 33);
             this.characterNameLabel.Name = "characterNameLabel";
-            this.characterNameLabel.Size = new System.Drawing.Size(67, 24);
+            this.characterNameLabel.Size = new System.Drawing.Size(72, 24);
             this.characterNameLabel.TabIndex = 120;
             this.characterNameLabel.Text = "Nome:";
             // 
             // characterImagePictureBox
             // 
+            this.characterImagePictureBox.BackColor = System.Drawing.Color.Transparent;
             this.characterImagePictureBox.Location = new System.Drawing.Point(25, 90);
             this.characterImagePictureBox.Name = "characterImagePictureBox";
             this.characterImagePictureBox.Size = new System.Drawing.Size(210, 328);
@@ -345,15 +382,18 @@
             // sessionActionLogLabel
             // 
             this.sessionActionLogLabel.AutoSize = true;
-            this.sessionActionLogLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sessionActionLogLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.sessionActionLogLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sessionActionLogLabel.ForeColor = System.Drawing.Color.Black;
             this.sessionActionLogLabel.Location = new System.Drawing.Point(542, 36);
             this.sessionActionLogLabel.Name = "sessionActionLogLabel";
-            this.sessionActionLogLabel.Size = new System.Drawing.Size(171, 24);
+            this.sessionActionLogLabel.Size = new System.Drawing.Size(190, 24);
             this.sessionActionLogLabel.TabIndex = 118;
             this.sessionActionLogLabel.Text = "Histórico de ações:";
             // 
             // sessionActionLogRichTextBox
             // 
+            this.sessionActionLogRichTextBox.ForeColor = System.Drawing.Color.Black;
             this.sessionActionLogRichTextBox.Location = new System.Drawing.Point(546, 63);
             this.sessionActionLogRichTextBox.Name = "sessionActionLogRichTextBox";
             this.sessionActionLogRichTextBox.Size = new System.Drawing.Size(268, 355);
@@ -364,6 +404,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(839, 450);
             this.Controls.Add(this.sessionInventoryButton);
             this.Controls.Add(this.characterConstitutionLabel);
@@ -399,8 +442,12 @@
             this.Controls.Add(this.characterImagePictureBox);
             this.Controls.Add(this.sessionActionLogLabel);
             this.Controls.Add(this.sessionActionLogRichTextBox);
+            this.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Sessão";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sessão";
+            this.Load += new System.EventHandler(this.Sessão_Load);
             ((System.ComponentModel.ISupportInitialize)(this.characterImagePictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

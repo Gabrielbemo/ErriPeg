@@ -40,7 +40,8 @@
             // createSessionButton
             // 
             this.createSessionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.createSessionButton.Location = new System.Drawing.Point(75, 291);
+            this.createSessionButton.ForeColor = System.Drawing.Color.Black;
+            this.createSessionButton.Location = new System.Drawing.Point(364, 285);
             this.createSessionButton.Name = "createSessionButton";
             this.createSessionButton.Size = new System.Drawing.Size(100, 38);
             this.createSessionButton.TabIndex = 9;
@@ -50,7 +51,7 @@
             // 
             // sessionNameTextBox
             // 
-            this.sessionNameTextBox.Location = new System.Drawing.Point(44, 86);
+            this.sessionNameTextBox.Location = new System.Drawing.Point(175, 12);
             this.sessionNameTextBox.Name = "sessionNameTextBox";
             this.sessionNameTextBox.Size = new System.Drawing.Size(131, 20);
             this.sessionNameTextBox.TabIndex = 6;
@@ -58,8 +59,10 @@
             // createSessionLabel
             // 
             this.createSessionLabel.AutoSize = true;
+            this.createSessionLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.createSessionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.createSessionLabel.Location = new System.Drawing.Point(40, 59);
+            this.createSessionLabel.ForeColor = System.Drawing.Color.Black;
+            this.createSessionLabel.Location = new System.Drawing.Point(12, 12);
             this.createSessionLabel.Name = "createSessionLabel";
             this.createSessionLabel.Size = new System.Drawing.Size(157, 24);
             this.createSessionLabel.TabIndex = 5;
@@ -67,7 +70,7 @@
             // 
             // sessionStoryRichTextBox
             // 
-            this.sessionStoryRichTextBox.Location = new System.Drawing.Point(199, 86);
+            this.sessionStoryRichTextBox.Location = new System.Drawing.Point(12, 80);
             this.sessionStoryRichTextBox.Name = "sessionStoryRichTextBox";
             this.sessionStoryRichTextBox.Size = new System.Drawing.Size(206, 243);
             this.sessionStoryRichTextBox.TabIndex = 10;
@@ -76,8 +79,10 @@
             // sessionStoryLabel
             // 
             this.sessionStoryLabel.AutoSize = true;
+            this.sessionStoryLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.sessionStoryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sessionStoryLabel.Location = new System.Drawing.Point(195, 59);
+            this.sessionStoryLabel.ForeColor = System.Drawing.Color.Black;
+            this.sessionStoryLabel.Location = new System.Drawing.Point(12, 53);
             this.sessionStoryLabel.Name = "sessionStoryLabel";
             this.sessionStoryLabel.Size = new System.Drawing.Size(167, 24);
             this.sessionStoryLabel.TabIndex = 11;
@@ -86,17 +91,20 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(58, 180);
+            this.checkBox1.ForeColor = System.Drawing.Color.Black;
+            this.checkBox1.Location = new System.Drawing.Point(329, 251);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(135, 28);
             this.checkBox1.TabIndex = 13;
             this.checkBox1.Text = "Sou Mestre?";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(389, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 30);
@@ -109,6 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(476, 351);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBox1);
@@ -117,7 +126,9 @@
             this.Controls.Add(this.createSessionButton);
             this.Controls.Add(this.sessionNameTextBox);
             this.Controls.Add(this.createSessionLabel);
+            this.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.Name = "CriarSessão";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CriarSessão";
             this.Load += new System.EventHandler(this.CriarSessão_Load);
             this.ResumeLayout(false);

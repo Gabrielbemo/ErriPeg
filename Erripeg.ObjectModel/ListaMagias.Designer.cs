@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListaMagias));
             this.characterUpdateButton = new System.Windows.Forms.Button();
             this.spellCreateButton = new System.Windows.Forms.Button();
             this.spellDeleteButton = new System.Windows.Forms.Button();
@@ -40,7 +41,12 @@
             // 
             // characterUpdateButton
             // 
+            this.characterUpdateButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.characterUpdateButton.FlatAppearance.BorderSize = 10;
+            this.characterUpdateButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.characterUpdateButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.characterUpdateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.characterUpdateButton.ForeColor = System.Drawing.Color.Black;
             this.characterUpdateButton.Location = new System.Drawing.Point(358, 371);
             this.characterUpdateButton.Name = "characterUpdateButton";
             this.characterUpdateButton.Size = new System.Drawing.Size(100, 30);
@@ -50,7 +56,9 @@
             // 
             // spellCreateButton
             // 
+            this.spellCreateButton.FlatAppearance.BorderSize = 20;
             this.spellCreateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spellCreateButton.ForeColor = System.Drawing.Color.Black;
             this.spellCreateButton.Location = new System.Drawing.Point(207, 371);
             this.spellCreateButton.Name = "spellCreateButton";
             this.spellCreateButton.Size = new System.Drawing.Size(100, 30);
@@ -61,7 +69,9 @@
             // 
             // spellDeleteButton
             // 
+            this.spellDeleteButton.FlatAppearance.BorderSize = 20;
             this.spellDeleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spellDeleteButton.ForeColor = System.Drawing.Color.Black;
             this.spellDeleteButton.Location = new System.Drawing.Point(207, 407);
             this.spellDeleteButton.Name = "spellDeleteButton";
             this.spellDeleteButton.Size = new System.Drawing.Size(100, 31);
@@ -72,7 +82,9 @@
             // spellListLabel
             // 
             this.spellListLabel.AutoSize = true;
+            this.spellListLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.spellListLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spellListLabel.ForeColor = System.Drawing.Color.Black;
             this.spellListLabel.Location = new System.Drawing.Point(12, 12);
             this.spellListLabel.Name = "spellListLabel";
             this.spellListLabel.Size = new System.Drawing.Size(139, 24);
@@ -90,7 +102,9 @@
             // 
             // updateTableButton
             // 
+            this.updateTableButton.FlatAppearance.BorderSize = 20;
             this.updateTableButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateTableButton.ForeColor = System.Drawing.Color.Black;
             this.updateTableButton.Location = new System.Drawing.Point(358, 407);
             this.updateTableButton.Name = "updateTableButton";
             this.updateTableButton.Size = new System.Drawing.Size(100, 31);
@@ -102,6 +116,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(587, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 30);
@@ -113,6 +128,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(674, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.updateTableButton);
@@ -121,7 +138,9 @@
             this.Controls.Add(this.spellCreateButton);
             this.Controls.Add(this.spellDeleteButton);
             this.Controls.Add(this.spellListLabel);
+            this.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.Name = "ListaMagias";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListaMagias";
             this.Load += new System.EventHandler(this.ListaMagias_Load);
             ((System.ComponentModel.ISupportInitialize)(this.selectSpellDataGridView)).EndInit();

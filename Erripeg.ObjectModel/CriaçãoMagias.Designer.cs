@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CriaçãoMagias));
             this.createSpellButton = new System.Windows.Forms.Button();
             this.spellCooldownPrefixLabel = new System.Windows.Forms.Label();
             this.spellCooldownPrefixTextBox = new System.Windows.Forms.TextBox();
@@ -45,6 +46,7 @@
             // createSpellButton
             // 
             this.createSpellButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createSpellButton.ForeColor = System.Drawing.Color.Black;
             this.createSpellButton.Location = new System.Drawing.Point(121, 357);
             this.createSpellButton.Name = "createSpellButton";
             this.createSpellButton.Size = new System.Drawing.Size(76, 34);
@@ -56,7 +58,9 @@
             // spellCooldownPrefixLabel
             // 
             this.spellCooldownPrefixLabel.AutoSize = true;
+            this.spellCooldownPrefixLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.spellCooldownPrefixLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spellCooldownPrefixLabel.ForeColor = System.Drawing.Color.Black;
             this.spellCooldownPrefixLabel.Location = new System.Drawing.Point(8, 280);
             this.spellCooldownPrefixLabel.Name = "spellCooldownPrefixLabel";
             this.spellCooldownPrefixLabel.Size = new System.Drawing.Size(291, 24);
@@ -73,7 +77,9 @@
             // spellCooldownLabel
             // 
             this.spellCooldownLabel.AutoSize = true;
+            this.spellCooldownLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.spellCooldownLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spellCooldownLabel.ForeColor = System.Drawing.Color.Black;
             this.spellCooldownLabel.Location = new System.Drawing.Point(26, 221);
             this.spellCooldownLabel.Name = "spellCooldownLabel";
             this.spellCooldownLabel.Size = new System.Drawing.Size(249, 24);
@@ -90,7 +96,9 @@
             // spellCostLabel
             // 
             this.spellCostLabel.AutoSize = true;
+            this.spellCostLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.spellCostLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spellCostLabel.ForeColor = System.Drawing.Color.Black;
             this.spellCostLabel.Location = new System.Drawing.Point(83, 160);
             this.spellCostLabel.Name = "spellCostLabel";
             this.spellCostLabel.Size = new System.Drawing.Size(145, 24);
@@ -107,7 +115,9 @@
             // spellDamageLabel
             // 
             this.spellDamageLabel.AutoSize = true;
+            this.spellDamageLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.spellDamageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spellDamageLabel.ForeColor = System.Drawing.Color.Black;
             this.spellDamageLabel.Location = new System.Drawing.Point(83, 110);
             this.spellDamageLabel.Name = "spellDamageLabel";
             this.spellDamageLabel.Size = new System.Drawing.Size(142, 24);
@@ -131,7 +141,9 @@
             // spellNameLabel
             // 
             this.spellNameLabel.AutoSize = true;
+            this.spellNameLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.spellNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.spellNameLabel.ForeColor = System.Drawing.Color.Black;
             this.spellNameLabel.Location = new System.Drawing.Point(83, 59);
             this.spellNameLabel.Name = "spellNameLabel";
             this.spellNameLabel.Size = new System.Drawing.Size(149, 24);
@@ -141,6 +153,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(231, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 30);
@@ -152,6 +165,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(318, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.createSpellButton);
@@ -165,7 +180,9 @@
             this.Controls.Add(this.spellDamageTextBox);
             this.Controls.Add(this.spellNameTextBox);
             this.Controls.Add(this.spellNameLabel);
+            this.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.Name = "CriaçãoMagias";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CriaçãoMagias";
             this.Load += new System.EventHandler(this.CriaçãoMagias_Load);
             this.ResumeLayout(false);

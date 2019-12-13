@@ -39,8 +39,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(104, 60);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(104, 73);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 24);
             this.label1.TabIndex = 0;
@@ -49,7 +51,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(104, 158);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 24);
@@ -59,9 +63,10 @@
             // buttonCadastro
             // 
             this.buttonCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCadastro.Location = new System.Drawing.Point(83, 290);
+            this.buttonCadastro.ForeColor = System.Drawing.Color.Black;
+            this.buttonCadastro.Location = new System.Drawing.Point(81, 299);
             this.buttonCadastro.Name = "buttonCadastro";
-            this.buttonCadastro.Size = new System.Drawing.Size(112, 45);
+            this.buttonCadastro.Size = new System.Drawing.Size(112, 40);
             this.buttonCadastro.TabIndex = 2;
             this.buttonCadastro.Text = "Cadastrar";
             this.buttonCadastro.UseVisualStyleBackColor = true;
@@ -70,7 +75,8 @@
             // buttonLogin
             // 
             this.buttonLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogin.Location = new System.Drawing.Point(83, 244);
+            this.buttonLogin.ForeColor = System.Drawing.Color.Black;
+            this.buttonLogin.Location = new System.Drawing.Point(81, 244);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(112, 40);
             this.buttonLogin.TabIndex = 3;
@@ -104,7 +110,9 @@
             this.Controls.Add(this.buttonCadastro);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);

@@ -21,5 +21,10 @@ namespace Erripeg.ObjectModel
         {
 
         }
+
+        private void Sessão_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
