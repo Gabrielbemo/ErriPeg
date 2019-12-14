@@ -22,6 +22,11 @@ namespace Erripeg.ObjectModel
             this.List("select id, name, lvl from character where id_user = "+ Usuario.id +" and id_session = " + Usuario.id_sessao);
             dataGridView1.Columns[2].HeaderText = "Level";
             dataGridView1.Columns[1].Width = 230;
+
+            if (Usuario.id != Usuario.mestre)
+            {
+                button2.Enabled = false;
+            }            
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -39,6 +44,7 @@ namespace Erripeg.ObjectModel
                 cmd = new SqlCommand(sql, cmd.Connection);
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable ds = new DataTable();
+                
                 da.Fill(ds);
                 dataGridView1.DataSource = ds;
                 dataGridView1.DataMember = da.TableMappings[0].DataSetTable;
@@ -93,12 +99,13 @@ namespace Erripeg.ObjectModel
 
                     Usuario.id_cha = reader.GetInt32(reader.GetOrdinal("id"));
                     Usuario.life = reader.GetDouble(reader.GetOrdinal("life"));
-                    Usuario.mana = reader.GetDouble(reader.GetOrdinal("life"));
-                    Usuario.weight = reader.GetDouble(reader.GetOrdinal("life"));
-                    Usuario.height = reader.GetDouble(reader.GetOrdinal("life"));
-                    Usuario.xp = reader.GetDouble(reader.GetOrdinal("life"));
+                    Usuario.mana = reader.GetDouble(reader.GetOrdinal("mana"));
+                    Usuario.lvl = reader.GetDouble(reader.GetOrdinal("lvl"));
+                    Usuario.weight = reader.GetDouble(reader.GetOrdinal("weight"));
+                    Usuario.height = reader.GetDouble(reader.GetOrdinal("height"));
+                    Usuario.xp = reader.GetDouble(reader.GetOrdinal("xp"));
                     Usuario.name = reader.GetString(reader.GetOrdinal("name"));
-                    Usuario.bk = reader.GetString(reader.GetOrdinal("name"));
+                    Usuario.bk = reader.GetString(reader.GetOrdinal("history"));
                     reader.Close();
                     cmd.Dispose();
                     connection.Disconnect();
@@ -118,6 +125,34 @@ namespace Erripeg.ObjectModel
             {
 
             }
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            menu m = new menu();
+            m.Show();
+            this.Dispose();
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            Usuario.id = 0;
+            Usuario.login = null;
+            Usuario.senha = null;
+            Usuario.id_sessao = 0;
+            Usuario.mestre = 0;
+            Usuario.id_cha = 0;
+            Usuario.life = 0;
+            Usuario.mana = 0;
+            Usuario.weight = 0;
+            Usuario.height = 0;
+            Usuario.xp = 0;
+            Usuario.name = null;
+            Usuario.lvl = 0;
+            Usuario.bk = null;
+            this.Dispose();
+            Login l = new Login();
+            l.Show();
         }
     }
 }

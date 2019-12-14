@@ -15,13 +15,28 @@ namespace ObjectModel
 
         public void delete(int id)
         {
+            cmd.CommandText = "delete from Creatures where id=@id";
 
+            cmd.Parameters.AddWithValue("@id", id);
+
+            try
+            {
+                cmd.Connection = connection.Connect();
+                cmd.ExecuteNonQuery();
+                connection.Disconnect();
+            }
+            catch (SqlException)
+            {
+                throw;
+            }
         }
 
-        public void Register( string creatureXpTextBox , string creatureLvlTextBox , string creatureNameTextBox , string creatureHeightTextBox , string creatureWeightTextBox ,
-            string creatureManaTextBox , string creatureLifeTextBox , string creatureIdTextBox )
+        public void update(string creatureXpTextBox, string creatureLvlTextBox, string creatureNameTextBox, string creatureHeightTextBox, string creatureWeightTextBox,
+           string creatureManaTextBox, string creatureLifeTextBox, string creatureIdTextBox, string creatureBackgroundRichTextBox)
         {
-            cmd.CommandText = "INSERT INTO Creatures (name,life,lvl,mana,weight,height,xp)values(@creatureNameTextBox,@creatureLifeTextBox,@creatureLvlTextBox,@creatureManaTextBox,@creatureWeightTextBox,@creatureHeightTextBox,@creatureXpTextBox)";
+            cmd.CommandText = "update Creatures set name=@creatureNameTextBox,life=@creatureLifeTextBox,lvl=@creatureLvlTextBox" +
+                ",mana=@creatureManaTextBox,weight=@creatureWeightTextBox,height=@creatureHeightTextBox," +
+                "xp=@creatureXpTextBox,bk=@creatureBackgroundRichTextBox where id=@id";
 
             cmd.Parameters.AddWithValue("@creatureNameTextBox", creatureNameTextBox);
             cmd.Parameters.AddWithValue("@creatureLifeTextBox", creatureLifeTextBox);
@@ -30,6 +45,8 @@ namespace ObjectModel
             cmd.Parameters.AddWithValue("@creatureWeightTextBox", creatureWeightTextBox);
             cmd.Parameters.AddWithValue("@creatureHeightTextBox", creatureHeightTextBox);
             cmd.Parameters.AddWithValue("@creatureXpTextBox", creatureXpTextBox);
+            cmd.Parameters.AddWithValue("@creatureBackgroundRichTextBox", creatureBackgroundRichTextBox);
+            cmd.Parameters.AddWithValue("@id", creatureIdTextBox);
 
             try
             {
@@ -44,6 +61,33 @@ namespace ObjectModel
 
 
         }
+
+        public void Register( string creatureXpTextBox , string creatureLvlTextBox , string creatureNameTextBox , string creatureHeightTextBox , string creatureWeightTextBox ,
+            string creatureManaTextBox , string creatureLifeTextBox , string creatureIdTextBox, string creatureBackgroundRichTextBox)
+        {
+            cmd.CommandText = "INSERT INTO Creatures (name,life,lvl,mana,weight,height,xp,bk)values(@creatureNameTextBox,@creatureLifeTextBox,@creatureLvlTextBox,@creatureManaTextBox,@creatureWeightTextBox,@creatureHeightTextBox,@creatureXpTextBox,@creatureBackgroundRichTextBox)";
+
+            cmd.Parameters.AddWithValue("@creatureNameTextBox", creatureNameTextBox);
+            cmd.Parameters.AddWithValue("@creatureLifeTextBox", creatureLifeTextBox);
+            cmd.Parameters.AddWithValue("@creatureLvlTextBox", creatureLvlTextBox);
+            cmd.Parameters.AddWithValue("@creatureManaTextBox", creatureManaTextBox);
+            cmd.Parameters.AddWithValue("@creatureWeightTextBox", creatureWeightTextBox);
+            cmd.Parameters.AddWithValue("@creatureHeightTextBox", creatureHeightTextBox);
+            cmd.Parameters.AddWithValue("@creatureXpTextBox", creatureXpTextBox);
+            cmd.Parameters.AddWithValue("@creatureBackgroundRichTextBox", creatureBackgroundRichTextBox);
+
+            try
+            {
+                cmd.Connection = connection.Connect();
+                cmd.ExecuteNonQuery();
+                connection.Disconnect();
+            }
+            catch (SqlException)
+            {
+                throw;
+            }
+        }
+
         public creature Search(string id)
         {
             string sql;
@@ -68,6 +112,7 @@ namespace ObjectModel
                     c.weight = reader.GetDouble(reader.GetOrdinal("weight"));
                     c.height = reader.GetDouble(reader.GetOrdinal("height"));
                     c.xp = reader.GetDouble(reader.GetOrdinal("xp"));
+                    c.bk = reader.GetString(reader.GetOrdinal("bk"));
                     reader.Close();
                     cmd.Dispose();
                     connection.Disconnect();

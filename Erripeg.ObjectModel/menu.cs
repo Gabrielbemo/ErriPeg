@@ -22,13 +22,13 @@ namespace Erripeg.ObjectModel
         private void Button1_Click(object sender, EventArgs e)
         {
             Random random = new Random();
-            label1.Text = random.Next(1, 20).ToString();
+            label1.Text = random.Next(1, 21).ToString();
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
             Random random = new Random();
-            label2.Text = random.Next(1, 6).ToString();
+            label2.Text = random.Next(1, 7).ToString();
         }
 
         private void Button3_Click(object sender, EventArgs e)
@@ -36,7 +36,7 @@ namespace Erripeg.ObjectModel
             Random random = new Random();
             if (textBox1.Text.Any())
             {
-                label3.Text = random.Next(1, Int32.Parse(textBox1.Text)).ToString();
+                label3.Text = random.Next(1, Int32.Parse(textBox1.Text)+1).ToString();
             }
 
         }
@@ -70,7 +70,23 @@ namespace Erripeg.ObjectModel
 
         private void button8_Click(object sender, EventArgs e)
         {
-
+            Usuario.id = 0;
+            Usuario.login = null;
+            Usuario.senha = null;
+            Usuario.id_sessao = 0;
+            Usuario.mestre = 0;
+            Usuario.id_cha = 0;
+            Usuario.life = 0;
+            Usuario.mana = 0;
+            Usuario.weight = 0;
+            Usuario.height = 0;
+            Usuario.xp = 0;
+            Usuario.name = null;
+            Usuario.lvl = 0;
+            Usuario.bk = null;
+            this.Dispose();
+            Login l = new Login();
+            l.Show();
         }
     }
 }

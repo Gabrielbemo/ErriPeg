@@ -108,9 +108,23 @@ namespace Erripeg.ObjectModel
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            Usuario.id = 0;
+            Usuario.login = null;
+            Usuario.senha = null;
+            Usuario.id_sessao = 0;
+            Usuario.mestre = 0;
+            Usuario.id_cha = 0;
+            Usuario.life = 0;
+            Usuario.mana = 0;
+            Usuario.weight = 0;
+            Usuario.height = 0;
+            Usuario.xp = 0;
+            Usuario.name = null;
+            Usuario.lvl = 0;
+            Usuario.bk = null;
+            this.Dispose();
             Login l = new Login();
             l.Show();
-            this.Dispose();
         }
 
         private void SessionDataGridView_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)

@@ -41,9 +41,7 @@
             this.characterInfoLabel = new System.Windows.Forms.Label();
             this.characterManaTextBox = new System.Windows.Forms.TextBox();
             this.characterLifeTextBox = new System.Windows.Forms.TextBox();
-            this.characterIdTextBox = new System.Windows.Forms.TextBox();
             this.characterBackgroundRichTextBox = new System.Windows.Forms.RichTextBox();
-            this.characterIdLabel = new System.Windows.Forms.Label();
             this.characterXpLabel = new System.Windows.Forms.Label();
             this.characterHeightLabel = new System.Windows.Forms.Label();
             this.characterWeightLabel = new System.Windows.Forms.Label();
@@ -52,6 +50,7 @@
             this.characterNameLabel = new System.Windows.Forms.Label();
             this.characterImagePictureBox = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.teste = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.characterImagePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,7 +82,7 @@
             // characterSearchTextBox
             // 
             this.characterSearchTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.characterSearchTextBox.Location = new System.Drawing.Point(251, 283);
+            this.characterSearchTextBox.Location = new System.Drawing.Point(252, 273);
             this.characterSearchTextBox.Name = "characterSearchTextBox";
             this.characterSearchTextBox.Size = new System.Drawing.Size(248, 29);
             this.characterSearchTextBox.TabIndex = 115;
@@ -106,7 +105,7 @@
             // characterXpTextBox
             // 
             this.characterXpTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.characterXpTextBox.Location = new System.Drawing.Point(399, 70);
+            this.characterXpTextBox.Location = new System.Drawing.Point(323, 70);
             this.characterXpTextBox.Name = "characterXpTextBox";
             this.characterXpTextBox.Size = new System.Drawing.Size(100, 29);
             this.characterXpTextBox.TabIndex = 106;
@@ -198,15 +197,6 @@
             this.characterLifeTextBox.TextChanged += new System.EventHandler(this.CharacterLifeTextBox_TextChanged);
             this.characterLifeTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CharacterLifeTextBox_KeyPress);
             // 
-            // characterIdTextBox
-            // 
-            this.characterIdTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.characterIdTextBox.Location = new System.Drawing.Point(251, 70);
-            this.characterIdTextBox.Name = "characterIdTextBox";
-            this.characterIdTextBox.Size = new System.Drawing.Size(100, 29);
-            this.characterIdTextBox.TabIndex = 97;
-            this.characterIdTextBox.TextChanged += new System.EventHandler(this.characterIdTextBox_TextChanged);
-            // 
             // characterBackgroundRichTextBox
             // 
             this.characterBackgroundRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -217,26 +207,13 @@
             this.characterBackgroundRichTextBox.Text = "";
             this.characterBackgroundRichTextBox.TextChanged += new System.EventHandler(this.characterBackgroundRichTextBox_TextChanged);
             // 
-            // characterIdLabel
-            // 
-            this.characterIdLabel.AutoSize = true;
-            this.characterIdLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.characterIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.characterIdLabel.ForeColor = System.Drawing.Color.Black;
-            this.characterIdLabel.Location = new System.Drawing.Point(248, 43);
-            this.characterIdLabel.Name = "characterIdLabel";
-            this.characterIdLabel.Size = new System.Drawing.Size(144, 24);
-            this.characterIdLabel.TabIndex = 89;
-            this.characterIdLabel.Text = "ID personagem:";
-            this.characterIdLabel.Click += new System.EventHandler(this.characterIdLabel_Click);
-            // 
             // characterXpLabel
             // 
             this.characterXpLabel.AutoSize = true;
             this.characterXpLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.characterXpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.characterXpLabel.ForeColor = System.Drawing.Color.Black;
-            this.characterXpLabel.Location = new System.Drawing.Point(395, 43);
+            this.characterXpLabel.Location = new System.Drawing.Point(319, 43);
             this.characterXpLabel.Name = "characterXpLabel";
             this.characterXpLabel.Size = new System.Drawing.Size(41, 24);
             this.characterXpLabel.TabIndex = 87;
@@ -321,13 +298,25 @@
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(297, 335);
+            this.button2.Location = new System.Drawing.Point(297, 355);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(171, 37);
             this.button2.TabIndex = 120;
             this.button2.Text = "Atualizar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
+            // 
+            // teste
+            // 
+            this.teste.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teste.ForeColor = System.Drawing.Color.Black;
+            this.teste.Location = new System.Drawing.Point(297, 308);
+            this.teste.Name = "teste";
+            this.teste.Size = new System.Drawing.Size(171, 37);
+            this.teste.TabIndex = 121;
+            this.teste.Text = "Pesquisar";
+            this.teste.UseVisualStyleBackColor = true;
+            this.teste.Click += new System.EventHandler(this.Button1_Click);
             // 
             // CriaçãoPersonagem
             // 
@@ -336,6 +325,7 @@
             this.BackgroundImage = global::Erripeg.ObjectModel.Properties.Resources.vector_textured_grunge_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(832, 450);
+            this.Controls.Add(this.teste);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.characterCreateButton);
             this.Controls.Add(this.characterSearchLabel);
@@ -350,9 +340,7 @@
             this.Controls.Add(this.characterInfoLabel);
             this.Controls.Add(this.characterManaTextBox);
             this.Controls.Add(this.characterLifeTextBox);
-            this.Controls.Add(this.characterIdTextBox);
             this.Controls.Add(this.characterBackgroundRichTextBox);
-            this.Controls.Add(this.characterIdLabel);
             this.Controls.Add(this.characterXpLabel);
             this.Controls.Add(this.characterHeightLabel);
             this.Controls.Add(this.characterWeightLabel);
@@ -385,9 +373,7 @@
         private System.Windows.Forms.Label characterInfoLabel;
         private System.Windows.Forms.TextBox characterManaTextBox;
         private System.Windows.Forms.TextBox characterLifeTextBox;
-        private System.Windows.Forms.TextBox characterIdTextBox;
         private System.Windows.Forms.RichTextBox characterBackgroundRichTextBox;
-        private System.Windows.Forms.Label characterIdLabel;
         private System.Windows.Forms.Label characterXpLabel;
         private System.Windows.Forms.Label characterHeightLabel;
         private System.Windows.Forms.Label characterWeightLabel;
@@ -396,5 +382,6 @@
         private System.Windows.Forms.Label characterNameLabel;
         private System.Windows.Forms.PictureBox characterImagePictureBox;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button teste;
     }
 }

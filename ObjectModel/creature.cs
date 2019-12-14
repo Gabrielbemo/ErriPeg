@@ -15,5 +15,6 @@ namespace ObjectModel
         public double weight { get; set; }
         public double height { get; set; }
         public double xp { get; set; }
+        public string bk { get; set; }
     }
 }
